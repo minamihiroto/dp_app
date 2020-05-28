@@ -15,6 +15,7 @@
                     @endif
 
                     You are logged in!
+                    <a href="/top">TOP</a>
                 </div>
             </div>
         </div>
