@@ -18,6 +18,11 @@
         </div>
         @foreach ($posts as $post)
             <div class="question">
+
+                <div class="question-user">
+                    質問者：{{ $post->user->name }}
+                </div>
+
                 <span class="question-date">
                     {{ $post->created_at->format('Y/m/d：') }}
                 </span>

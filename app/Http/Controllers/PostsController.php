@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+use Illuminate\Support\Facades\Auth;
 
 class PostsController extends Controller
 {
@@ -25,7 +26,13 @@ class PostsController extends Controller
             'title' => 'required|max:50',
             'body' => 'required|max:2000',
         ]);
-        Post::create($params);
+
+        $params = new Post;
+        $params->title = $request->title;
+        $params->body = $request->body;
+        $params->user_id = Auth::user()->id;
+        $params->save();
+        
         return redirect()->route('top');
     }
 

@@ -30,6 +30,10 @@ a{
   margin: 2% auto;
 }
 
+.question-user{
+  font-size: 2rem;
+}
+
 .question-date{
   text-align: left;
 }
