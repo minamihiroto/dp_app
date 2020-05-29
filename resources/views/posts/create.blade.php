@@ -11,7 +11,7 @@
 <body>
     <section class="post-question">
             <form method="POST" action="{{ route('posts.store') }}">
-                {{ csrf_field() }}
+                @csrf
                     <h1>質問を投稿する</h1>
 
                     <div class="post-title">

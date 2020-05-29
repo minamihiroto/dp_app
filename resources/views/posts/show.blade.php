@@ -23,13 +23,13 @@
         </div>
 
         <form method="POST" action="{{ route('posts.destroy', ['post' => $post]) }}" class="show-question-delete">
-            {{ csrf_field() }}
+            @csrf
             @method('DELETE')     
             <button class="btn btn-danger">質問を削除する</button>
         </form>
 
         <form method="POST" action="{{ route('comments.store') }}">
-            {{ csrf_field() }}
+            @csrf
             <input name="post_id" type="hidden" value="{{ $post->id }}">
 
             <div class="comments-body">
