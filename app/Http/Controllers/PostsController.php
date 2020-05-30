@@ -11,9 +11,11 @@ class PostsController extends Controller
 {
     public function index()
     {
+        $user = Auth::user();
+        $param = ['user'=>$user];
         // $posts = Post::orderBy('created_at', 'desc')->get();
         $posts = Post::orderBy('created_at', 'desc')->paginate(10);
-        return view('posts.index', ['posts' => $posts]);
+        return view('posts.index', ['posts' => $posts],$param);
     }
 
     public function create()

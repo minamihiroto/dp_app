@@ -17,7 +17,7 @@ class CommentsController extends Controller
         ]);
 
         $post = Post::findOrFail($params['post_id']);
-        
+
         $comment=new Comment();
         $comment->post_id=$params['post_id'];
         $comment->user_id=Auth::user()->id;

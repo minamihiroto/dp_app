@@ -11,6 +11,7 @@
 
     <section class="index-questions">
         <div class="index-questions-headline">
+            <h2>ようこそ、{{ $user->name }}さん</h2>
             <h1>Q&A</h1>
             @cannot('isAdmin')
                 <a href="{{ route('posts.create') }}">
