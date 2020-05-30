@@ -22,32 +22,39 @@
             </p>
         </div>
 
-        <form method="POST" action="{{ route('posts.destroy', ['post' => $post]) }}" class="show-question-delete">
-            @csrf
-            @method('DELETE')     
-            <button class="btn btn-danger">質問を削除する</button>
-        </form>
+        @if(Auth::user()!=null)
+            @if(Auth::user()->admin_flg=='admin' || Auth::user()->id==$post->user_id)
+                <form method="POST" action="{{ route('posts.destroy', ['post' => $post]) }}" class="show-question-delete">
+                    @csrf
+                    @method('DELETE')     
+                    <button class="btn btn-danger">質問を削除する</button>
+                </form>
+            @endif
+        @endif
 
-        <form method="POST" action="{{ route('comments.store') }}">
-            @csrf
-            <input name="post_id" type="hidden" value="{{ $post->id }}">
+        @if(Auth::user()!=null)
+            @if(Auth::user()->admin_flg=='admin')
+                <form method="POST" action="{{ route('comments.store') }}">
+                    @csrf
+                    <input name="post_id" type="hidden" value="{{ $post->id }}">
 
-            <div class="comments-body">
-                <textarea name="body" class="{{ $errors->has('body') ? 'is-invalid' : '' }}" rows="10" placeholder="回答"></textarea>
-                @if ($errors->has('body'))
-                    <div class="comments-error">
-                        {{ $errors->first('body') }}
+                    <div class="comments-body">
+                        <textarea name="body" class="{{ $errors->has('body') ? 'is-invalid' : '' }}" rows="10" placeholder="回答"></textarea>
+                        @if ($errors->has('body'))
+                            <div class="comments-error">
+                                {{ $errors->first('body') }}
+                            </div>
+                        @endif
                     </div>
-                @endif
-            </div>
             
-            <div class="comments-button">
-                <button type="submit">
-                    回答する
-                </button>
-            </div>
-        </form>
-
+                    <div class="comments-button">
+                        <button type="submit">
+                            回答する
+                        </button>
+                    </div>
+                </form>
+            @endif
+        @endif
         <div class="question-comments">
             @forelse($post->comments as $comment)
                 <div class="comment">
