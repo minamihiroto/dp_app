@@ -55,6 +55,9 @@
                         {{ $comment->created_at->format('Y.m.d') }}
                     </time>
                     <p>
+                        インストラクター：{{ $comment->user->name }}
+                    </p>
+                    <p>
                         {!! nl2br(e($comment->body)) !!}
                     </p>
                     <hr>
