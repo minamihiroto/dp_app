@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Post;
 use Illuminate\Support\Facades\Auth;
+use Gate;
 
 class PostsController extends Controller
 {
@@ -17,7 +18,13 @@ class PostsController extends Controller
 
     public function create()
     {
-        return view('posts.create');
+        if(Gate::allows('isAdmin')){
+            dd('アクセスが許可されていないユーザです。');
+        }else{
+            $user = Auth::user();
+            $param = ['user'=>$user];
+        } 
+        return view('posts.create',$param);
     }
 
     public function store(Request $request)

@@ -12,9 +12,12 @@
     <section class="index-questions">
         <div class="index-questions-headline">
             <h1>Q&A</h1>
-            <a href="{{ route('posts.create') }}">
-                質問を投稿する ＞＞
-            </a>
+            @cannot('isAdmin')
+                <a href="{{ route('posts.create') }}">
+                    質問を投稿する ＞＞
+                </a>
+            @else
+            @endcan
         </div>
         @foreach ($posts as $post)
             <div class="question">
