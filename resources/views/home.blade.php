@@ -15,7 +15,15 @@
                     @endif
 
                     You are logged in!
-                    <a href="/top">TOP</a>
+                    <a href="/top">Q&A</a>
+                
+                    @if(Auth::user()!=null)
+                        @if(Auth::user()->admin_flg=='admin')
+                            <a href="/news/create">お知らせを投稿する</a>
+                        @else
+                        @endif
+                    @endif
+                
                 </div>
             </div>
         </div>

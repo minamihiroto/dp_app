@@ -7,6 +7,7 @@
   <title>Document</title>
 </head>
 <body>
+  <a href="/top">Q&Aにいく</a>
   <form action="{{ route('news.store') }}" method="post" enctype="multipart/form-data">
     @csrf
     <div class="contact-main">
