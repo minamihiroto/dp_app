@@ -24,3 +24,5 @@ Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
 Route::get('/top', 'PostsController@index')->name('top')->middleware('auth');
 Route::resource('posts', 'PostsController', ['only' => ['create', 'store', 'show','destroy']]);
 Route::resource('comments', 'CommentsController', ['only' => ['store']]);
+
+Route::resource('news', 'NewsController',['only'=>['index','create','store']]);
