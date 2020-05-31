@@ -26,7 +26,7 @@
             @if(Auth::user()->admin_flg=='admin' || Auth::user()->id==$post->user_id)
                 <form method="POST" action="{{ route('posts.destroy', ['post' => $post]) }}" class="show-question-delete">
                     @csrf
-                    @method('DELETE')     
+                    @method('DELETE')
                     <button class="btn btn-danger">質問を削除する</button>
                 </form>
             @endif

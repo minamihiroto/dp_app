@@ -41,4 +41,16 @@ class NewsController extends Controller
         
         return redirect()->route('news');
     }
+
+    public function show($id)
+    {
+        $post = News::find($id);
+        return view('news.show',['post'=>$post]);
+    }
+
+    public function destroy($id)
+    {
+        $post = News::find($id)->delete();
+        return redirect()->route('news');
+    }
 }

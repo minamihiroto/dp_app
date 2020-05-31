@@ -11,8 +11,7 @@
     @if(count($posts) > 0)
       @foreach($posts as $post)
           <div class="announce" role="alert">
-            {{ $post->news_title }}
-            {{ $post->news_message }}
+            <a href="/news/{{$post->id}}">{{ $post->news_title }}</a>
           </div>
       @endforeach
     @else
