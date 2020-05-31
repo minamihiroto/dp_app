@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\News;
+use Gate;
 
 class NewsController extends Controller
 {
@@ -16,7 +17,14 @@ class NewsController extends Controller
 
     public function create()
     {
-        return view('news.create');
+        if(Gate::allows('isAdmin')){
+            $user = Auth::user();
+            $param = ['user'=>$user];   
+        }else{
+            dd('アクセスが許可されていないユーザです。');
+        } 
+
+        return view('news.create',$param);
     }
 
     public function store(Request $request)
