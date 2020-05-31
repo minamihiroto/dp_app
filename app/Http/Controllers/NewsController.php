@@ -17,6 +17,7 @@ class NewsController extends Controller
 
     public function create()
     {
+        $this->middleware('auth');
         if(Gate::allows('isAdmin')){
             $user = Auth::user();
             $param = ['user'=>$user];   
@@ -29,6 +30,7 @@ class NewsController extends Controller
 
     public function store(Request $request)
     {
+        $this->middleware('auth');
         $params = $request->validate([
             'news_title' => 'required|max:50',
             'news_message' => 'required|max:2000',
@@ -50,6 +52,7 @@ class NewsController extends Controller
 
     public function destroy($id)
     {
+        $this->middleware('auth');
         $post = News::find($id)->delete();
         return redirect()->route('news');
     }
