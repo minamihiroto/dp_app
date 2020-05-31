@@ -18,6 +18,9 @@
                     質問を投稿する ＞＞
                 </a>
             @else
+            <a href="{{ route('news.create') }}">
+                お知らせ投稿をしにいく ＞＞
+            </a>
             @endcan
         </div>
         @foreach ($posts as $post)
