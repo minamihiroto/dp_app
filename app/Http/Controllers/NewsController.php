@@ -31,6 +31,6 @@ class NewsController extends Controller
         $params->news_message = $request->news_message;
         $params->save();
         
-        return redirect()->route('news.index');
+        return redirect()->route('news');
     }
 }
