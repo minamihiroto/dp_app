@@ -13,7 +13,118 @@ a{
   text-decoration: underline;
 }
 
-/* index */
+a:hover{
+  color: rgb(99, 99, 99);
+}
+
+.pagination{
+  text-align: center;
+  margin: 5% auto;
+  display: flex;
+  justify-content: center;
+}
+
+.page-item{
+  padding: 0.75%;
+}
+
+.page-item span{
+  color: rgb(194, 194, 194);
+}
+
+.page-link{
+  font-size: 1.5rem;
+  color: black;
+}
+
+.top-content{
+  padding-top: 10%;
+}
+
+/* main-header,footer */
+
+.navbar{
+  position: fixed;
+  width: 100%;
+}
+
+.navbar-nav{
+  width: 100%;
+}
+
+.nav-link{
+  text-decoration: none;
+}
+
+.dropdown{
+  margin-left: auto;
+}
+
+/* main.top */
+
+.contact{
+  margin-top: 15%;
+}
+
+.contact h1{
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.contact-caution p{
+  text-align: center;
+}
+
+.contact-form{
+  margin-top: 5%;
+  display: flex;
+}
+
+.contact-info{
+  margin-left: 37%;
+}
+
+.contact-info p{
+  padding-bottom:37%;
+}
+
+.contact-text{
+  margin-left: 10%;
+}
+
+.contact-text p{
+  margin-bottom: 30%;
+}
+
+.caution-text input{
+  margin-right: 30%;
+}
+
+.contact textarea{
+  width: 250%;
+  height: 50%;
+}
+
+.contact-submit{
+  text-align: center;
+}
+
+.contact-submit input{
+  padding: 0.5% 2%;
+  background-color: white;
+}
+
+.contact-submit input:hover{
+  background-color: rgb(230, 230, 230);
+}
+
+/* news.index */
+
+/* news.show */
+
+/* news.create */
+
+/* post.index */
 
 .index-questions-headline{
   text-align: center;
@@ -66,27 +177,7 @@ a{
   padding: 3px;
 }
 
-.pagination{
-  text-align: center;
-  margin: 5% auto;
-  display: flex;
-  justify-content: center;
-}
-
-.page-item{
-  padding: 0.75%;
-}
-
-.page-item span{
-  color: rgb(194, 194, 194);
-}
-
-.page-link{
-  font-size: 1.5rem;
-  color: black;
-}
-
-/* show */
+/* post.show */
 
 .show-question{
   text-align: center;
@@ -131,7 +222,7 @@ a{
   margin: 2%;
 }
 
-/* create */
+/* post.create */
 
 .post-question{
   text-align: center;

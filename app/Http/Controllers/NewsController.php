@@ -11,8 +11,10 @@ class NewsController extends Controller
 {
     public function index()
     {
-        $posts = News::orderBy('created_at', 'desc')->paginate(10);
-        return view('news.index', ['posts' => $posts]);
+        $user = Auth::user();
+        $param = ['user'=>$user];
+        $posts = News::orderBy('created_at', 'desc')->paginate(15);
+        return view('news.index', ['posts' => $posts],$param);
     }
 
     public function create()
@@ -46,8 +48,10 @@ class NewsController extends Controller
 
     public function show($id)
     {
+        $user = Auth::user();
+        $param = ['user'=>$user];
         $post = News::find($id);
-        return view('news.show',['post'=>$post]);
+        return view('news.show',['post'=>$post],$param);
     }
 
     public function destroy($id)

@@ -1,6 +1,7 @@
-@extends('layouts.head')
+@extends('layouts.main')
 @section('title','News')
 @section('content')
+<section class="news-show top-content">
   <h1>{{ $post->news_title }}</h1>
   <h5>{{$post->created_at}}</h5>
   <p>{!! nl2br($post->news_message) !!}</p>
@@ -14,4 +15,5 @@
       </form>
     @endif
   @endif
+</section>
 @endsection
