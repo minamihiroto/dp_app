@@ -11,7 +11,7 @@ class MainController extends Controller
     public function index(){
         $user = Auth::user();
         $param = ['user'=>$user];
-        $items = News::orderBy('created_at','desc')->get();
+        $items = News::orderBy('created_at','desc')->paginate(5);
         return view('main.index',['items'=>$items],$param);
     }
 
