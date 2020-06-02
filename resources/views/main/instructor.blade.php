@@ -44,11 +44,11 @@
       <li>軸トレ®マスタートレーナー</li>
     </ul>
   </div>
-  <img src="/images/member-one.png">
+  <img src="/images/owner.png">
 </section>
 
 <section class="instructor-member-two">
-<img src="/images/member-two.png">
+<img src="/images/owner.png">
   <div class="membertwo-text">
     <h1>AKI</h1>
     <ul>

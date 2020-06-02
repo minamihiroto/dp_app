@@ -22,7 +22,7 @@
     @else
       <div>投稿記事がありません</div>
     @endif
-    <img src="/images/news-image.jpg">
+    <img src="/images/news-image.png">
   </section>
 
   <section class="instructor-about">
