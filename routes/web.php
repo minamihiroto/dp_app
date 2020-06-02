@@ -21,9 +21,14 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
 
-Route::get('/top', 'PostsController@index')->name('top')->middleware('auth');
+Route::get('/post', 'PostsController@index')->name('post')->middleware('auth');
 Route::resource('posts', 'PostsController', ['only' => ['create', 'store', 'show','destroy']])->middleware('auth');
 Route::resource('comments', 'CommentsController', ['only' => ['store']])->middleware('auth');
 
 Route::get('news','NewsController@index')->name('news');
 Route::resource('news', 'NewsController',['only'=>['create','store','show','destroy']]);
+
+Route::get('top','MainController@index')->name('top');
+Route::get('instructor','MainController@instructor')->name('instructor');
+Route::get('lesson','MainController@lesson')->name('lesson');
+Route::get('online','MainController@online')->name('online');
