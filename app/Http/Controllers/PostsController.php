@@ -42,7 +42,7 @@ class PostsController extends Controller
         $params->user_id = Auth::user()->id;
         $params->save();
         
-        return redirect()->route('top');
+        return redirect()->route('post');
     }
 
     public function show($post_id)
@@ -60,6 +60,6 @@ class PostsController extends Controller
             $post->comments()->delete();
             $post->delete();
         });
-        return redirect()->route('top');
+        return redirect()->route('post');
     }
 }
