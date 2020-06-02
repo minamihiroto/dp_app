@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
+@extends('layouts.head')
+@section('title','News')
+@section('content')
   <h1>news</h1>
     @if(count($posts) > 0)
       @foreach($posts as $post)
@@ -17,5 +11,4 @@
     @else
       <div>投稿記事がありません</div>
     @endif
-</body>
-</html>
+@endsection

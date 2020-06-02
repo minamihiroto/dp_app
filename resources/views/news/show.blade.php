@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
+@extends('layouts.head')
+@section('title','News')
+@section('content')
   <h1>{{ $post->news_title }}</h1>
   <h5>{{$post->created_at}}</h5>
   <p>{!! nl2br($post->news_message) !!}</p>
@@ -20,5 +14,4 @@
       </form>
     @endif
   @endif
-</body>
-</html>
+@endsection
