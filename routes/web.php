@@ -13,10 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
@@ -28,7 +24,7 @@ Route::resource('comments', 'CommentsController', ['only' => ['store']])->middle
 Route::get('news','NewsController@index')->name('news');
 Route::resource('news', 'NewsController',['only'=>['create','store','show','destroy']]);
 
-Route::get('top','MainController@index')->name('top');
+Route::get('/','MainController@index')->name('top');
 Route::get('instructor','MainController@instructor')->name('instructor');
 Route::get('lesson','MainController@lesson')->name('lesson');
 Route::get('online','MainController@online')->name('online');
