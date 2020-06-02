@@ -15,7 +15,7 @@
                     @endif
 
                     You are logged in!
-                    <a href="/top">Q&A</a>
+                    <a href="/post">Q&A</a>
                 
                     @if(Auth::user()!=null)
                         @if(Auth::user()->admin_flg=='admin')

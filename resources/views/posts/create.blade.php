@@ -33,7 +33,7 @@
                     </div>
 
                     <div class="post-button">
-                        <a href="{{ route('top') }}">
+                        <a href="{{ route('post') }}">
                             キャンセル
                         </a>
                         <button type="submit">

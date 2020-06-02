@@ -10,7 +10,7 @@
 <body>
     <section class="show-question">
 
-        <a href="{{ route('top') }}">一覧に戻る ＞＞</a>
+        <a href="{{ route('post') }}">一覧に戻る ＞＞</a>
 
         <div class="question-content">
             <h1>

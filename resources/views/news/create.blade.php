@@ -25,7 +25,7 @@
         <p><textarea class="form" name="news_message">{{ old('news_message') }}</textarea></p>
     </div>
     <input type="submit" class="create button" value="submit">
-    <a href="{{ route('top') }}">
+    <a href="{{ route('post') }}">
       キャンセル
   </a>
   </form>
