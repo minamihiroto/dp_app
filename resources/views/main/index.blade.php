@@ -33,13 +33,13 @@
         <h3>30回で回で新しい身体に生まれ変わる</h3>
       </div>
       <img src="/images/instructor.png">
-    </div>  
+    </div>
     <p class="text">
       1912年頃ドイツのジョセフ・H・ピラティスによって考案されました。身体を鍛えるというよりも「ボディ・マインド・スピリット」を丸ごとコントロールしていくエクササイズで 身体を思いのまま動かせるようになる理想的なシステムとなっています。心身をコントロール出来ず、 身体の不調を抱え、歪みに気づいていない人はたくさんいます。ピラティスを通して最小限の力で最大の効果が発揮できるアライメント(姿勢)を知ることで体調が良くなり、 骨を動かし鍛えることで免疫力も上がります。仕事やスポーツ、趣味などにとどまらず、すべてのパフォーマンスを上げてくれる素晴らしいメソッドとなっています。
     </p>
     <div class="link">
       <a href="/instructor">インストラクターについて詳しく知りたい ＞＞</a>
-    </div> 
+    </div>
   </section>
 
   <section class="lesson-about">
@@ -89,29 +89,33 @@
   </section>
 
   <section class="contact">
-    <div class="contact-caution">
-      <h1>お問い合わせ</h1>
-      <p>その他ご不明な点などございましたらお問い合わせください。
-      </p>
-      <p> ※間違ったメールアドレスを入力され、返信をできないケースが増えています。メールアドレスの入力にはご注意ください。</p>
-    </div>
-    <div class="contact-form">
-      <div class="contact-info">
-        <p>お名前</p>
-        <p>メールアドレス</p>
-        <p>電話番号</p>
-        <p>お問い合わせ内容</p>
+    <form method="POST" action="{{url('contact')}}">
+      @csrf
+      <div class="contact-caution">
+        <h1>お問い合わせ</h1>
+        <p>その他ご不明な点などございましたらお問い合わせください。
+        </p>
+        <p> ※間違ったメールアドレスを入力され、返信をできないケースが増えています。メールアドレスの入力にはご注意ください。</p>
       </div>
-      <div class="contact-text">
-       <p><input type="text"></p>
-       <p><input type="text"></p>
-       <p><input type="text"></p>
-       <p><textarea cols="20" rows="8"></textarea></p>
+      <div class="contact-form">
+        <div class="contact-info">
+          <p>お名前</p>
+          <p>メールアドレス</p>
+          <p>電話番号</p>
+          <p>お問い合わせ内容</p>
+        </div>
+        <div class="contact-text">
+
+         <p><input type="text" name="name"></p>
+         <p><input type="text" name="email"></p>
+         <p><input type="text" name="tel"></p>
+         <p><textarea name="detail" cols="20" rows="8"></textarea></p>
+        </div>
       </div>
-    </div>
-    <div class="contact-submit submit-button">
-    <input type="submit" value="送信">
-    </div>
+      <div class="contact-submit submit-button">
+      <input type="submit" value="送信">
+      </div>
+  </form>
   </section>
 
   <section class="access" id="access">
