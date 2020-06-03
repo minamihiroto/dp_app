@@ -94,8 +94,7 @@
       @csrf
       <div class="contact-caution">
         <h1>お問い合わせ</h1>
-        <p>その他ご不明な点などございましたらお問い合わせください。
-        </p>
+        <p>その他ご不明な点などございましたらお問い合わせください。</p>
         <p> ※間違ったメールアドレスを入力され、返信をできないケースが増えています。メールアドレスの入力にはご注意ください。</p>
       </div>
       <div class="contact-form">
@@ -106,17 +105,25 @@
           <p>お問い合わせ内容</p>
         </div>
         <div class="contact-text">
-
-         <p><input type="text" name="name"></p>
-         <p><input type="text" name="email"></p>
-         <p><input type="text" name="tel"></p>
-         <p><textarea name="detail" cols="20" rows="8"></textarea></p>
+          <p><input type="text" name="name"></p>
+            @if($errors->has('name'))
+              <div class="error_msg" style="color: red">{{ $errors->first('name') }}</div>
+            @endif
+          <p><input type="text" name="email"></p>
+            @if($errors->has('email'))
+              <div class="error_msg" style="color: red">{{ $errors->first('email') }}</div>
+            @endif
+          <p><input type="text" name="tel"></p>
+          <p><textarea name="detail" cols="20" rows="8"></textarea></p>
+            @if($errors->has('detail'))
+              <div class="error_msg" style="color: red">{{ $errors->first('detail') }}</div>
+            @endif
         </div>
       </div>
       <div class="contact-submit submit-button">
-      <input type="submit" value="送信">
+        <input type="submit" value="送信">
       </div>
-  </form>
+    </form>
   </section>
 
   <section class="access" id="access">
@@ -142,7 +149,7 @@
       <p>基本的な持ち物はお水とタオルです。汗をかきますので忘れずにお持ちください。お水はスタジオでも1本100円で販売しております。</p>
       <li>駐車場・駐輪場について</li>
       <p>駐輪場はビルの裏側の美容室の駐車場の隣にあります。駐車場はスタジオがあるビルの目の前にタイムズがあります。入り口は運転免許試験場の方に曲がった奥にあります。</p>
-      <a href="https://goo.gl/maps/Xd5oPkoK2QVmriNTA">近隣駐車場のご案内 >></a>
+      <a class="parking" href="https://goo.gl/maps/Xd5oPkoK2QVmriNTA">近隣駐車場のご案内 >></a>
     </ul>
   </section>
 

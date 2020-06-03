@@ -17,6 +17,13 @@ class MainController extends Controller
     }
     
     public function contact(Request $request){
+
+        $params = $request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'detail' => 'required',
+        ]);
+        
         $name=$request->name;
         $email=$request->email;
         $tel= $request->tel;
