@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\News;
+use Mail;
 
 class MainController extends Controller
 {
@@ -14,6 +15,21 @@ class MainController extends Controller
         $items = News::orderBy('created_at','desc')->paginate(5);
         return view('main.index',['items'=>$items],$param);
     }
+    public function contact(Request $request){
+        $name=$request->name;
+        $email=$request->email;
+        $tel= $request->tel;
+        $detail=$request->detail;
+        Mail::raw($name."\n".$email."\n".$tel."\n".$detail, function($message) {
+          $message->to("ryuji.yasu@gmail.com")
+          ->subject('お問い合わせメール');
+        });
+        $user = Auth::user();
+        $param = ['user'=>$user];
+        $items = News::orderBy('created_at','desc')->paginate(5);
+        return view('main.index',['items'=>$items],$param);
+    }
+
 
     public function instructor(){
         $user = Auth::user();
