@@ -11,10 +11,11 @@
   </section>
 
   <section class="news">
-      <h1>お知らせ</h1>
+      <h2>お知らせ</h2>
     @if(count($items) > 0)
       @foreach($items as $item)
           <div class="news-link" role="alert">
+            {{$item->news_type}}
             <a href="/news/{{$item->id}}">{{ $item->news_title }}</a>
           </div>
       @endforeach

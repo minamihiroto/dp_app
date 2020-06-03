@@ -3,13 +3,12 @@
 @section('css')
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css">
-  
 @endsection
 
 @section('header')
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/"><img src="/images/logo.png" width="50%"></a>
+    <a class="navbar-brand" href="/"><span>logo</span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -45,7 +44,7 @@
               <a class="dropdown-item" href="login">ログイン</a>
               <a class="dropdown-item" href="registar">新規登録</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="online">オンラインレッスンについて</a>
+              <a class="dropdown-item" href="online">オンラインとは</a>
             </div>
           </li>
         @endif
@@ -61,7 +60,7 @@
 @section('footer')
 
 <footer>
-  <a href="#"><img class="footer-symbol" src="/images/symbol.png"></a>
+  <a href="/" class="footer-symbol"><span>symbol</span></a>
   <ul class="footer-link">
     <a href="news"><li>以前のお知らせを見る</li></a>
     <a href="instructor"><li>インストラクターについて詳しく知りたい</li></a>

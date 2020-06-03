@@ -48,6 +48,18 @@ a:hover{
   width: 100%;
 }
 
+.navbar-brand{
+  background-image: url(/images/logo.png);
+  background-repeat: no-repeat;
+  background-size:  contain	;
+  width: 10%;
+  height: 100%;
+}
+
+.navbar-brand span {
+  visibility: hidden;
+} 
+
 .navbar-nav{
   width: 100%;
 }
@@ -58,6 +70,73 @@ a:hover{
 
 .dropdown{
   margin-left: auto;
+}
+
+.navbar-logo{
+  background-image: url(/images/logo.png);
+  background-repeat: no-repeat;
+  background-size:  contain	;
+  width: 7%;
+  position: fixed;
+  left: 2%;
+  margin-top: 2%;
+}
+
+.navbar-logo span{
+  visibility: hidden;
+}
+
+footer{
+  display: flex;
+}
+
+footer a{
+  width: 25%;
+  height: 360px;
+}
+
+.footer-symbol{
+  background-image: url(/images/symbol.png);
+  background-repeat: no-repeat;
+  background-size:  contain;
+  margin-left: 2%;
+  margin-top: 5%;
+}
+
+.footer-symbol span{
+  visibility: hidden;
+}
+
+.footer-link{
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.footer-link li{
+  margin-bottom: 10%;
+  list-style: none;
+}
+
+.footer-link a{
+  color: black;
+}
+
+.footer-access{
+  margin-left: 8%;
+  margin-top: 10%;
+}
+
+.footer-access h4{
+  padding-bottom: 20%; 
+}
+
+.tell{
+  padding-top: 15%;
+}
+
+.footer-logo{
+  margin-left: 8%;
+  margin-top: 12%;
 }
 
 /* main.top */
@@ -118,17 +197,87 @@ a:hover{
   background-color: rgb(230, 230, 230);
 }
 
+.caution{
+  width: 80%;
+  margin-top: 15%;
+  margin-left: 10%;
+  background-color: white;
+}
+
+.caution h1{
+  text-align: center;
+  padding-bottom: 8%;
+  padding-top: 5%;
+}
+
+.caution p{
+  line-height: 300%;
+  margin-left: 25%;
+  width: 60%;
+  margin-bottom: 5%;
+}
+
+.caution ul{
+  list-style: none;
+  margin-left: 8%;
+}
+
+.caution p span{
+  color: crimson;
+  font-size: 150%;
+}
+
 /* news.index */
+.news-index{
+  text-align: center;
+}
 
+.announce{
+  line-height: 300%;
+}
 /* news.show */
+.news-show{
+  width: 80%;
+  margin: 0 auto 10%;
+}
 
+.news-show h1{
+  text-align: center;
+}
+
+.news-show h5{
+  text-align: right;
+}
+
+.news-show p{
+  margin-top: 7.5%;
+}
+
+.news-delete{
+  text-align: right;
+}
 /* news.create */
+.news-create{
+  text-align: center;
+  padding: 5%;
+}
 
+.back-link{
+  font-size: 2rem;
+}
+
+.input-title{
+  margin: 2% auto;
+}
+
+.form{
+  width: 70%;
+}
 /* post.index */
 
 .index-questions-headline{
   text-align: center;
-  margin: 10% auto;
+  padding-top: 7%;
 }
 
 .index-questions-headline h1{
@@ -182,7 +331,9 @@ a:hover{
 .show-question{
   text-align: center;
   width: 80%;
-  margin: 5% auto 10%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  margin: 0 auto;
 }
 
 .question-content{
@@ -229,7 +380,8 @@ a:hover{
 }
 
 .post-question h1{
-  margin: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   font-size: 2rem;
 }
 
@@ -247,4 +399,18 @@ a:hover{
 
 .post-button a{
   margin-right: 1%;
+}
+
+@media(max-width:770px){
+  .navbar-brand{
+    width: 15%;
+  }
+  
+}
+
+@media(max-width:420px){
+  .navbar-brand{
+    width: 18%;
+  }
+  
 }
