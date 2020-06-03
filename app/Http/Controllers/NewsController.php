@@ -13,7 +13,7 @@ class NewsController extends Controller
     {
         $user = Auth::user();
         $param = ['user'=>$user];
-        $posts = News::orderBy('created_at', 'desc')->paginate(15);
+        $posts = News::orderBy('created_at', 'desc')->paginate(10);
         return view('news.index', ['posts' => $posts],$param);
     }
 
@@ -34,11 +34,13 @@ class NewsController extends Controller
     {
         $this->middleware('auth');
         $params = $request->validate([
+            'news_type' => 'required',
             'news_title' => 'required|max:50',
             'news_message' => 'required|max:2000',
         ]);
 
         $params = new News;
+        $params->news_type = $request->news_type;
         $params->news_title = $request->news_title;
         $params->news_message = $request->news_message;
         $params->save();
