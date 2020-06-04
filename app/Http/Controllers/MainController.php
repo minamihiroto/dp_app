@@ -17,25 +17,22 @@ class MainController extends Controller
     }
     
     public function contact(Request $request){
+        if ($request->isMethod('POST')){
+            $params = $request->validate([
+                'name' => 'required',
+                'email' => 'required|email',
+                'detail' => 'required',
+            ]);
 
-        $params = $request->validate([
-            'name' => 'required',
-            'email' => 'required|email',
-            'detail' => 'required',
-        ]);
-        
-        $name=$request->name;
-        $email=$request->email;
-        $tel= $request->tel;
-        $detail=$request->detail;
-        Mail::raw($name."\n".$email."\n".$tel."\n".$detail, function($message) {
-          $message->to("kokowatamf@gmail.com")
-          ->subject('お問い合わせメール');
+            $name=$request->name;
+            $email=$request->email;
+            $tel=$request->tel;
+            $detail=$request->detail;
+            Mail::raw($name."\n".$email."\n".$tel."\n".$detail, function($message) {
+            $message->to("kokowatamf@gmail.com")->subject('お問い合わせメール');
         });
-        $user = Auth::user();
-        $param = ['user'=>$user];
-        $items = News::orderBy('created_at','desc')->paginate(5);
-        return view('main.index',['items'=>$items],$param);
+        }
+        return redirect('/#contact');
     }
 
     public function instructor(){
