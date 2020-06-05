@@ -1,33 +1,25 @@
-@extends('layouts.app')
+@extends('layouts.member')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                    <a href="/post">Q&A</a>
+<section class="home">
+    <h2>ようこそ、{{ $user->name }}さん</h2>
+    <a href="/post">Q&A</a>
                 
-                    @if(Auth::user()!=null)
-                        @if(Auth::user()->admin_flg=='admin')
-                            <a href="/news/create">お知らせを投稿する</a>
-                        @else
-                        @endif
-                    @endif
-                
-                </div>
-            </div>
-        </div>
+    @if(Auth::user()!=null)
+        @if(Auth::user()->admin_flg=='admin')
+            <a class="home-news" href="/news/create">お知らせを投稿する</a>
+        @else
+        @endif
+    
+        @endif
+
+    <div class="vimeo">
+        <iframe src='https://vimeo.com/showcase/7172589/embed' allowfullscreen frameborder='0' style='width:80%;'></iframe>
     </div>
-</div>
-<iframe src='https://vimeo.com/showcase/7172589/embed' allowfullscreen frameborder='0' style='width:auto;height:auto;'></iframe>
+
+    <form class="home-logout" method="POST" action="/logout" class="logout" >
+        @csrf
+        <a href="javascript:void(0)" onclick="this.parentNode.submit()">logout</a>
+    </form>
+</section>
 @endsection
