@@ -41,11 +41,16 @@ a:hover{
   padding-top: 10%;
 }
 
+p{
+  margin-bottom: 0;
+}
+
 /* main-header,footer */
 
 .navbar{
   position: fixed;
   width: 100%;
+  z-index: 50;
 }
 
 .navbar-brand{
@@ -88,6 +93,8 @@ a:hover{
 
 footer{
   display: flex;
+  z-index: 100;
+  background-color: white;
 }
 
 footer a{
@@ -135,99 +142,574 @@ footer a{
 }
 
 .footer-logo{
-  margin-left: 8%;
-  margin-top: 12%;
+  margin: 12% 4% 0;
+}
+
+.footer-logo p{
+  margin-top: 25%;
+}
+
+@media screen and (max-width: 770px) {
+
+  .footer-link{
+    display: none;
+  }
+
+  .footer-access{
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+  
+  footer{
+    margin-bottom: 5%;
+  }
+
+  .footer-symbol{
+    display: none;
+  }
+
 }
 
 /* main.top */
 
-.contact{
-  margin-top: 15%;
+.top-image{
+  position: relative;
+  width: 100%;
 }
 
-.contact h1{
+.top-image-420{
+  display: none;
+  position: absolute;
+}
+
+@media screen and (max-width: 420px) {
+  .top-image{
+    display: none;
+  } 
+
+  .top-image-420{
+    position: relative;
+    width: 100%;
+    display: block;
+  }
+}
+
+/* top-content */
+
+.top-button{
+  position: fixed;
+  background-color: rgb(188, 86, 247);
+  box-shadow: 2px 2px 4px;
+  border-radius: 10px;
+  margin-left: 77%;
+  margin-top: -820%;
   text-align: center;
+  z-index: 40;
+  width: 20%;
+}
+
+.top-button:hover{
+  background-color: rgb(173, 53, 243);
+  box-shadow: 0px 0px 0px;
+}
+
+.top-button a:hover{
+  color: #000;
+}
+
+.top-button h2{
+  margin: 1%;
+  font-size: 1.3vw;
+}
+
+.top-button p{
+  font-size: 1vw;
+  margin: 1px;
+}
+
+@media screen and (max-width: 770px) {
+  .top-button{
+    margin-top: -815%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .top-button{
+    position: absolute;
+    margin-top: -1890%;
+    margin-left: 10%;
+    width: 80%;
+    padding: 5% 0;
+  }
+
+.top-button h2{
+  font-size: 100%;
+}
+
+.top-button p{
+  font-size: 100%;
+}
+}
+
+/* news */
+.news-links{
+  position: absolute;
+  margin-top: -735%;
+  width: 100%;
+}
+
+.news-link{
+  font-size: 1.5vw;
+}
+
+.news-links ul li{
   margin-bottom: 3%;
+  margin-left: 2%;
 }
 
-.contact-caution p{
+.news-link-type{
+  width: 10%;
+  display: inline-block;
+  font-size: 1.5vw;
+}
+
+.news-links span{
+  display: inline-block;
+  font-size: 1.5vw;
+} 
+
+.news-date{
+  display: inline;
+}
+
+@media screen and (max-width: 770px) {
+  .news-links{
+    margin-top: -740%;
+  }
+
+  .news-links ul li{
+    margin-bottom: 1%;
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+  .news-links{
+    margin-top: -1780%;
+  }
+
+  .news-links ul li{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 3%;
+  }
+
+  .news-link{
+    color: white;
+    text-align: center;
+    font-size: 70%;
+  }
+
+  .news-link-type{
+    display: block;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-size: 100%;
+  }
+}
+/* about */
+
+.instructor-about{
+  position: absolute;
+  margin-top: -625%;
+  margin-left: 50%;
+  width: 26%;
+}
+
+.instructor-link{
+  background-color: white;
+  padding: 4% 5%;
   text-align: center;
+  border-radius: 5px;
+} 
+
+.instructor-link a{
+  font-size: 1vw;
 }
 
-.contact-form{
-  margin-top: 5%;
-  display: flex;
+.lesson-about{
+  position: absolute;
+  margin-top: -428%;
+  margin-left: 50%;  
+  width: 35%;
 }
 
-.contact-info{
-  margin-left: 37%;
+.lesson-link{
+  background-color: white;
+  padding: 4% 4%;
+  text-align: center;
+  border-radius: 5px;
 }
 
-.contact-info p{
-  padding-bottom:37%;
+.lesson-link a{
+  font-size: 1vw;
 }
+
+.online-about{
+  position: absolute;
+  margin-top: -345%;
+  margin-left: 50%;  
+  width: 35%;
+}
+
+.onlinelesson-link{
+  background-color: white;
+  padding: 4% 4%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.onlinelesson-link a{
+  font-size: 1vw;
+}
+
+@media screen and (max-width: 770px) {
+  .instructor-about{
+    width: 35%;
+  }
+
+  .instructor-link{
+    padding: 2.5% 2%;
+    font-size: 0.7vw;
+  }    
+  
+  .lesson-about{
+    width: 45%;
+  }
+  
+  .lesson-link{
+    font-size: 0.6vw;
+    padding: 2.5% 2.5%;
+  }
+  
+  .online-about{
+  width: 35%;
+  }
+  
+  .onlinelesson-link{
+    padding: 2.5% 2%;
+    font-size: 0.7vw;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .instructor-about{
+    margin: 0%;
+    margin-top: -1507%;
+    width: 100%;
+  }
+
+  .lesson-about{
+    margin: 0%;
+    margin-top: -1040%;
+    width: 100%;
+  }
+
+  .online-about{
+    margin: 0%;
+    margin-top: -830%;
+    width: 100%;
+  }
+}
+
+/* reserve */
+
+.reserve{
+  position: absolute;
+  width: 78%;
+  margin-top: -320%;
+  margin-left: 11%;
+}
+
+iframe{
+  height: 800px;
+}
+
+@media screen and (max-width: 900px) {
+  iframe{
+    height: 600px;
+  } 
+}
+@media screen and (max-width: 640px) {
+  iframe{
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .reserve{
+    margin-top: -800%;
+  }
+
+  iframe{
+    height: 600px;
+  }
+}
+
+/* contact */
 
 .contact-text{
-  margin-left: 10%;
+  position: absolute;
+  margin-top: -255%;
+  margin-left: 36%;
 }
 
 .contact-text p{
-  margin-bottom: 30%;
+  margin-bottom: 20%;
+  size: 2vw;
 }
 
-.caution-text input{
-  margin-right: 30%;
+.contact-text-content{
+  width: 230%;
 }
 
-.contact textarea{
-  width: 250%;
-  height: 50%;
+.contact-button{
+  margin-left: 95%;
 }
 
-.contact-submit{
-  text-align: center;
+@media screen and (max-width: 770px) {
+  .contact-text{
+    margin-top: -255%;
+    margin-left: 25%;
+  }
+
+  .contact-text p{
+    margin-bottom: 10%;
+    size: 2vw;
+  }
+
+  .contact-text-content{
+    width: 200%;
+  }
+
+  .contact-button{
+    margin-left: 86%;
+  }
 }
 
-.contact-submit input{
-  padding: 0.5% 2%;
-  background-color: white;
+@media screen and (max-width: 420px) {
+  .contact-text{
+    margin-top: -650%;
+    margin-left: 15%;
+  }
+
+  .contact-text p{
+    margin-bottom: 10%;
+    size: 2vw;
+  }
+
+  .contact-text-content{
+    width: 150%;
+  }
+
+  .contact-button{
+    margin-left: 63%;
+  }
 }
 
-.contact-submit input:hover{
-  background-color: rgb(230, 230, 230);
+/* access */
+
+.access{
+  position: absolute;
+  margin-top: -180%;
+  width: 50%;
 }
+
+@media screen and (max-width: 420px) {
+  .access{
+    position: static;
+    margin: 0%;
+    width: 100%;
+  }
+}
+
+/* caution */
 
 .caution{
-  width: 80%;
-  margin-top: 15%;
-  margin-left: 10%;
-  background-color: white;
+  position: absolute;
+  margin-left: 50%;
+  width: 50%;
 }
 
-.caution h1{
-  text-align: center;
-  padding-bottom: 8%;
-  padding-top: 5%;
+.caution-hidden{
+  margin-top: -200%;
+  visibility:hidden;
 }
 
-.caution p{
-  line-height: 300%;
-  margin-left: 25%;
-  width: 60%;
-  margin-bottom: 5%;
+.caution a{
+  font-size: 1.2vw;
+  color: rgb(85, 68, 240);
 }
 
-.caution ul{
-  list-style: none;
-  margin-left: 8%;
+.parking{
+  margin-top: 150%;
 }
 
-.caution p span{
-  color: crimson;
-  font-size: 150%;
+.caution a:hover{
+  font-size: 1.2vw;
+  color: rgb(137, 126, 236);
+}
+
+@media screen and (max-width: 420px) {
+  .caution{
+    margin-top: -292%;
+    margin-left: 30%;
+  }
+
+  .caution-hidden{
+    margin-top: -700%;
+    visibility:hidden;
+  }
+
+  .parking{
+    margin-top: 700%;
+  }
+  
+
+  .caution a{
+    font-size: 80%;
+  }
+}
+
+/* main.instructor */
+
+.instructor-image{
+  position: relative;
+  width: 100%;
+}
+
+.instructor-image-420{
+  display: none;
+  position: absolute;
+}
+
+@media screen and (max-width: 420px) {
+
+  .instructor-image{
+    display: none;
+  }
+
+  .instructor-image-420{
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+}
+
+/* main.online */
+
+.online-image{
+  position: relative;
+  width: 100%;
+}
+
+.online-image-420{
+  display: none;
+  position: absolute;
+}
+
+.online-text{
+  position: absolute;
+  margin-top: -50%;
+  margin-left: 38%;
+}
+
+.online-link{
+  font-size: 3vw;
+}
+
+@media screen and (max-width: 420px) {
+
+  .online-image{
+    display: none;
+  }
+
+  .online-image-420{
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  .online-text{
+    position: absolute;
+    margin-top: -90%;
+    margin-left: 38%;
+  }
+}
+
+/* main.lesson */
+
+.lesson-image{
+  position: relative;
+  width: 100%;
+}
+
+.lesson-image-420{
+  display: none;
+  position: absolute;
+}
+
+.lesson-caution{
+  position: absolute;
+  margin-top: -30%;
+  margin-left: 31%;
+  font-size: 3vw;
+  line-height: 240%;
+}
+
+
+.lesson-caution-link{
+  color: red;
+  font-size: 3vw;
+}
+
+.lesson-caution-link:hover{
+  color: rgb(255, 104, 104);
+}
+
+
+@media screen and (max-width: 420px) {
+
+  .lesson-image{
+    display: none;
+  }
+
+  .lesson-image-420{
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  .lesson-caution{
+    margin-top: -70%;
+  }
+
+  .lesson-caution{
+    font-size: 5vw;
+  }
 }
 
 /* news.index */
+
+.news-index-body{
+  background-image: url(/images/news-index-page.png);
+}
+
 .news-index{
   text-align: center;
 }
@@ -235,7 +717,42 @@ footer a{
 .announce{
   line-height: 300%;
 }
+
+.instructor-image{
+  position: relative;
+  width: 100%;
+}
+
+.instructor-image-420{
+  display: none;
+  position: absolute;
+}
+
+
+@media screen and (max-width: 770px) {
+
+  .news-index{
+    padding-top: 15%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .news-index-body{
+    background-image: url(/images/news-index-page-420.png);
+  }
+
+  .news-index{
+    padding-top: 20%;
+  }
+}
+
 /* news.show */
+
+.news-show-body{
+  background-image: url(/images/news-show-page.png);
+}
+
 .news-show{
   width: 80%;
   margin: 0 auto 10%;
@@ -250,7 +767,29 @@ footer a{
 }
 
 .news-show p{
-  margin-top: 7.5%;
+  margin: 7.5% 15% 0;
+  word-wrap: break-word;
+}
+
+
+@media screen and (max-width: 770px) {
+
+  .news-show{
+    padding-top: 15%;
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+
+  .news-show-body{
+    background-image: url(/images/news-show-page-420.png);
+  }
+
+  .news-show{
+    padding-top: 25%;
+  }
+
 }
 
 .news-delete{
@@ -273,7 +812,17 @@ footer a{
 .form{
   width: 70%;
 }
+
 /* post.index */
+
+.index-questions{
+  height: 100%;
+  background: rgba(255,255,255,0.85);
+}
+
+.qa-back-img{
+  background:  url(/images/symbol.png) no-repeat fixed center center;
+}
 
 .index-questions-headline{
   text-align: center;
@@ -346,6 +895,10 @@ footer a{
   margin-bottom: 2%;
 }
 
+.question-content p{
+  word-wrap: break-word;
+}
+
 .show-question-delete{
   text-align: right;
 }
@@ -401,6 +954,10 @@ footer a{
   margin-right: 1%;
 }
 
+.news-type{
+  margin-top: 3%;
+}
+
 @media(max-width:770px){
   .navbar-brand{
     width: 15%;
@@ -412,5 +969,28 @@ footer a{
   .navbar-brand{
     width: 18%;
   }
-  
+}
+
+/* home */
+
+.home{
+  text-align: center;
+  padding-top: 10%;
+}
+
+.home h2{
+  font-size: 2rem;
+  margin-bottom: 5%;
+}
+
+.home-news{
+  padding-left: 10%;
+}
+
+.vimeo{
+  padding-top: 5%;
+}
+
+.home-logout{
+  margin: 5% auto;
 }

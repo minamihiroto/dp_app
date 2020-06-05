@@ -1,11 +1,12 @@
 @extends('layouts.main')
 @section('title','News')
+@section('body_class','news-show-body')
 @section('content')
 <section class="news-show top-content">
   {{$post->news_type}}
   <h1>{{ $post->news_title }}</h1>
   <h5>{{$post->created_at}}</h5>
-  <p>{!! nl2br($post->news_message) !!}</p>
+  <p>{!! nl2br(e($post->news_message)) !!}</p>
   @if(Auth::user()!=null)
     @if(Auth::user()->admin_flg=='admin')
     <form action="{{ route('news.destroy',$post->id) }}" method="POST" class="delete news-delete">

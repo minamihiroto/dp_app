@@ -7,7 +7,7 @@
   @yield('css')
   <title>@yield('title')</title>
 </head>
-<body>
+<body class="@yield('body_class')">
   @yield('header')
   @yield('content')
   @yield('footer')

@@ -7,7 +7,7 @@
     @csrf
     <div class="contact-main">
 
-      <select name="news_type">
+      <select class="news-type" name="news_type">
         <option value="ブログ">ブログ</option>
         <option value="キャンペーン">キャンペーン</option>
         <option value="お知らせ" selected="selected">お知らせ</option>

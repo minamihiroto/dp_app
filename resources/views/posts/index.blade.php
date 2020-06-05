@@ -5,9 +5,10 @@
 @section('title','Q&A')
 @section('content')
 
+<div class="qa-back-img">
     <section class="index-questions">
         <div class="index-questions-headline">
-            <h2>ようこそ、{{ $user->name }}さん</h2>
+            <a href="/home">＜＜ 動画を観に戻る</a>
             <h1>Q&A</h1>
             @cannot('isAdmin')
                 <a href="{{ route('posts.create') }}">
@@ -59,4 +60,5 @@
         @endforeach
         {{ $posts->links() }}
     </section>
+</div>
 @endsection
