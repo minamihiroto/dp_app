@@ -42,7 +42,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="login">ログイン</a>
-              <a class="dropdown-item" href="registar">新規登録</a>
+              <a class="dropdown-item" href="register">新規登録</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="online">オンラインとは</a>
             </div>
