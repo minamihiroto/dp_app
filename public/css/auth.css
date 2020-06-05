@@ -1,0 +1,95 @@
+/* auth-layout */
+
+.navbar-nav{
+  list-style: none;
+  text-align: right;
+  width: 70%;
+}
+
+a{
+  color: black;
+}
+
+a:hover{
+  opacity: 50%;
+}
+
+.py-4{
+  text-align: center;
+}
+
+/* login register */
+
+.card-header{
+  font-size: 64px;
+  margin: 0px auto 40px;
+}
+
+.form-group{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.form-group label{
+  margin-left: 35%;
+}
+
+.form-control{
+  margin-right: 35%;
+}
+
+.btn{
+  text-align: center;
+  margin: 20px;
+  padding: 10px 90px;
+  font-size: 30px;
+  border: 5px solid;
+}
+
+.btn:hover{
+  background-color: rgba(0, 0, 0, 0.151);
+}
+
+.forgot{
+  display: block;
+  width: 200px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.invalid-feedback{
+  display: block;
+  width: 50%;
+  color: red;
+  background-color: rgba(255, 0, 0, 0.233);
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media(max-width:770px){
+
+  .form-group label{
+    margin-left: 20%;
+  }
+  
+  .form-control{
+    margin-right: 20%;
+  }
+
+}
+
+@media(max-width:420px){
+
+  .form-group label{
+    margin-left: 10%;
+  }
+  
+  .form-control{
+    margin-right: 10%;
+  }
+
+}
