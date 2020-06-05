@@ -32,7 +32,7 @@ class MainController extends Controller
             $message->to("kokowatamf@gmail.com")->subject('お問い合わせメール');
         });
         }
-        return redirect('/#contact');
+        return redirect('/#contact')->with('message', 'お問い合わせを送信しました');
     }
 
     public function instructor(){
