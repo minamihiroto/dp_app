@@ -14,7 +14,7 @@ class AddNewsTypeToNewsTable extends Migration
     public function up()
     {
         Schema::table('news', function (Blueprint $table) {
-            $table->string('news_type');  //カラム追加
+            $table->string('news_type')->nullable();  //カラム追加
         });
     }
 

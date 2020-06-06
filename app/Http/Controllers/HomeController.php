@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\User;
+
+
 
 class HomeController extends Controller
 {
@@ -25,6 +28,11 @@ class HomeController extends Controller
     public function index()
     {
         $user = Auth::user();
+        $stripeCustomer = $user->createOrGetStripeCustomer();
+        return view('update-payment-method', [
+          'intent' => $user->createSetupIntent()
+        ]);
+
         $param = ['user'=>$user];
         return view('home',$param);
     }
@@ -32,5 +40,15 @@ class HomeController extends Controller
     {
 
         return view('home');
+    }
+    public function storePaymentInfo(Request $request){
+
+      $paymentMethod = $request->stripeToken;
+      $user = Auth::user(); //要するにUser情報を取得したい
+      $ret = null;
+      $user->addPaymentMethod($paymentMethod);
+
+      $param = ['user'=>$user];
+      return view('home',$param);
     }
 }

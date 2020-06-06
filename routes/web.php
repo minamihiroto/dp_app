@@ -29,3 +29,4 @@ Route::post('/contact','MainController@contact')->name('contact');
 Route::get('instructor','MainController@instructor')->name('instructor');
 Route::get('lesson','MainController@lesson')->name('lesson');
 Route::get('online','MainController@online')->name('online');
+Route::post('/user/payment/store', 'HomeController@storePaymentInfo')->name('payment.store');
