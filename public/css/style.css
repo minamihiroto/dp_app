@@ -432,33 +432,8 @@ footer a{
 .reserve{
   position: absolute;
   width: 78%;
-  margin-top: -320%;
-  margin-left: 11%;
-}
-
-iframe{
-  height: 800px;
-}
-
-@media screen and (max-width: 900px) {
-  iframe{
-    height: 600px;
-  } 
-}
-@media screen and (max-width: 640px) {
-  iframe{
-    height: 400px;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .reserve{
-    margin-top: -800%;
-  }
-
-  iframe{
-    height: 600px;
-  }
+  margin-top: -305%;
+  margin-left: 48%;
 }
 
 /* contact */
@@ -537,6 +512,29 @@ iframe{
     width: 100%;
   }
 }
+
+iframe{
+  height: 800px;
+}
+
+@media screen and (max-width: 900px) {
+  iframe{
+    height: 600px;
+  } 
+}
+@media screen and (max-width: 640px) {
+  iframe{
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  iframe{
+    height: 600px;
+  }
+}
+
 
 /* caution */
 
