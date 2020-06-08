@@ -436,6 +436,13 @@ footer a{
   margin-left: 48%;
 }
 
+@media screen and (max-width: 420px) {
+  .reserve{
+    margin-top: -775%;
+    margin-left: 41%;
+  }
+}
+
 /* contact */
 
 .contact-text{
