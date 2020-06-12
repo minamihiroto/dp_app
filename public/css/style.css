@@ -50,7 +50,7 @@ p{
 .navbar{
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 50;
 }
 
 .navbar-brand{
@@ -160,18 +160,29 @@ footer a{
     margin-right: 5%;
   }
 
+  .navbar-logo{
+    width: 13%;
+  }
+  
+
 }
 
 @media screen and (max-width: 420px) {
   
   footer{
-    margin-bottom: 5%;
+    padding-bottom: 5%;
   }
 
   .footer-symbol{
     display: none;
   }
 
+  .navbar-logo{
+    height: 50px;
+    width: 50px;
+    background-image: url(/images/symbol.png);
+  }
+  
 }
 
 /* main.top */
@@ -431,33 +442,14 @@ footer a{
 
 .reserve{
   position: absolute;
-  width: 78%;
-  margin-top: -320%;
-  margin-left: 11%;
-}
-
-iframe{
-  height: 800px;
-}
-
-@media screen and (max-width: 900px) {
-  iframe{
-    height: 600px;
-  } 
-}
-@media screen and (max-width: 640px) {
-  iframe{
-    height: 400px;
-  }
+  margin-top: -305%;
+  margin-left: 48%;
 }
 
 @media screen and (max-width: 420px) {
   .reserve{
-    margin-top: -800%;
-  }
-
-  iframe{
-    height: 600px;
+    margin-top: -775%;
+    margin-left: 41%;
   }
 }
 
@@ -537,6 +529,29 @@ iframe{
     width: 100%;
   }
 }
+
+iframe{
+  height: 800px;
+}
+
+@media screen and (max-width: 900px) {
+  iframe{
+    height: 600px;
+  } 
+}
+@media screen and (max-width: 640px) {
+  iframe{
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  iframe{
+    height: 600px;
+  }
+}
+
 
 /* caution */
 
@@ -696,11 +711,16 @@ iframe{
   }
 
   .lesson-caution{
-    margin-top: -70%;
+    margin-top: -74%;
+    margin-left: 25%;
   }
 
   .lesson-caution{
-    font-size: 5vw;
+    font-size: 4vw;
+  }
+
+  .lesson-caution-link{
+    font-size: 4vw;
   }
 }
 
@@ -712,6 +732,7 @@ iframe{
 
 .news-index{
   text-align: center;
+  padding-bottom: 10%;
 }
 
 .announce{
@@ -744,6 +765,15 @@ iframe{
 
   .news-index{
     padding-top: 20%;
+    text-align: left;
+  }
+
+  .news-index h1{
+    text-align: center;
+  }
+
+  .announce{
+    margin: 5% 10%;
   }
 }
 
@@ -789,6 +819,11 @@ iframe{
   .news-show{
     padding-top: 25%;
   }
+
+
+.news-show h1{
+font-size: 1.5rem;
+}
 
 }
 
@@ -960,14 +995,14 @@ iframe{
 
 @media(max-width:770px){
   .navbar-brand{
-    width: 15%;
+    width: 20%;
   }
   
 }
 
 @media(max-width:420px){
   .navbar-brand{
-    width: 18%;
+    width: 33%;
   }
 }
 
