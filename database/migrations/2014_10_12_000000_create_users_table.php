@@ -19,6 +19,8 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('payjp_customer')->nullable();
+            $table->string('payjp_subscription')->nullable();
             $table->rememberToken();
             $table->timestamps();
             $table->string('admin_flg')->default("false");;
