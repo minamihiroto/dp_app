@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
+Route::post('/pay','HomeController@pay')->name('pay');
 
 Route::get('/post', 'PostsController@index')->name('post')->middleware('auth');
 Route::resource('posts', 'PostsController', ['only' => ['create', 'store', 'show','destroy']])->middleware('auth');
