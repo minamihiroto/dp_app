@@ -217,7 +217,7 @@ footer a{
   box-shadow: 2px 2px 4px;
   border-radius: 10px;
   margin-left: 77%;
-  margin-top: -820%;
+  margin-top: -700%;
   text-align: center;
   z-index: 40;
   width: 20%;
@@ -244,14 +244,14 @@ footer a{
 
 @media screen and (max-width: 770px) {
   .top-button{
-    margin-top: -815%;
+    margin-top: -695%;
   }
 }
 
 @media screen and (max-width: 420px) {
   .top-button{
     position: absolute;
-    margin-top: -1890%;
+    margin-top: -1790%;
     margin-left: 10%;
     width: 80%;
     padding: 5% 0;
@@ -269,7 +269,7 @@ footer a{
 /* news */
 .news-links{
   position: absolute;
-  margin-top: -735%;
+  margin-top: -620%;
   width: 100%;
 }
 
@@ -299,7 +299,7 @@ footer a{
 
 @media screen and (max-width: 770px) {
   .news-links{
-    margin-top: -740%;
+    margin-top: -620%;
   }
 
   .news-links ul li{
@@ -310,7 +310,7 @@ footer a{
 
 @media screen and (max-width: 420px) {
   .news-links{
-    margin-top: -1780%;
+    margin-top: -1720%;
   }
 
   .news-links ul li{
@@ -333,11 +333,12 @@ footer a{
     font-size: 100%;
   }
 }
+
 /* about */
 
 .instructor-about{
   position: absolute;
-  margin-top: -625%;
+  margin-top: -500%;
   margin-left: 50%;
   width: 26%;
 }
@@ -355,7 +356,7 @@ footer a{
 
 .lesson-about{
   position: absolute;
-  margin-top: -428%;
+  margin-top: -410%;
   margin-left: 50%;  
   width: 35%;
 }
@@ -373,7 +374,7 @@ footer a{
 
 .online-about{
   position: absolute;
-  margin-top: -345%;
+  margin-top: -295%;
   margin-left: 50%;  
   width: 35%;
 }
@@ -421,19 +422,19 @@ footer a{
 @media screen and (max-width: 420px) {
   .instructor-about{
     margin: 0%;
-    margin-top: -1507%;
+    margin-top: -1502%;
     width: 100%;
   }
 
   .lesson-about{
     margin: 0%;
-    margin-top: -1040%;
+    margin-top: -1020%;
     width: 100%;
   }
 
   .online-about{
     margin: 0%;
-    margin-top: -830%;
+    margin-top: -765%;
     width: 100%;
   }
 }
@@ -442,13 +443,13 @@ footer a{
 
 .reserve{
   position: absolute;
-  margin-top: -305%;
+  margin-top: -270%;
   margin-left: 48%;
 }
 
 @media screen and (max-width: 420px) {
   .reserve{
-    margin-top: -775%;
+    margin-top: -720%;
     margin-left: 41%;
   }
 }
@@ -457,7 +458,7 @@ footer a{
 
 .contact-text{
   position: absolute;
-  margin-top: -255%;
+  margin-top: -225%;
   margin-left: 36%;
 }
 
@@ -476,7 +477,7 @@ footer a{
 
 @media screen and (max-width: 770px) {
   .contact-text{
-    margin-top: -255%;
+    margin-top: -225%;
     margin-left: 25%;
   }
 
@@ -496,7 +497,7 @@ footer a{
 
 @media screen and (max-width: 420px) {
   .contact-text{
-    margin-top: -650%;
+    margin-top: -620%;
     margin-left: 15%;
   }
 
@@ -518,7 +519,7 @@ footer a{
 
 .access{
   position: absolute;
-  margin-top: -180%;
+  margin-top: -170%;
   width: 50%;
 }
 
@@ -531,24 +532,35 @@ footer a{
 }
 
 iframe{
-  height: 800px;
+  height: 700px;
 }
 
 @media screen and (max-width: 900px) {
-  iframe{
-    height: 600px;
-  } 
-}
-@media screen and (max-width: 640px) {
+  
+  .access{
+    margin-top: -160%;
+  }
+
   iframe{
     height: 400px;
+  } 
+}
+
+@media screen and (max-width: 770px) {
+  
+  .access{
+    margin-top: -152%;
+  }
+
+  iframe{
+    height: 300px;
   }
 }
 
 @media screen and (max-width: 420px) {
 
   iframe{
-    height: 600px;
+    height: 1000px;
   }
 }
 
@@ -582,7 +594,7 @@ iframe{
 
 @media screen and (max-width: 420px) {
   .caution{
-    margin-top: -292%;
+    margin-top: -248%;
     margin-left: 30%;
   }
 
@@ -640,7 +652,7 @@ iframe{
 
 .online-text{
   position: absolute;
-  margin-top: -50%;
+  margin-top: -13%;
   margin-left: 38%;
 }
 
@@ -662,7 +674,6 @@ iframe{
 
   .online-text{
     position: absolute;
-    margin-top: -90%;
     margin-left: 38%;
   }
 }
@@ -737,16 +748,6 @@ iframe{
 
 .announce{
   line-height: 300%;
-}
-
-.instructor-image{
-  position: relative;
-  width: 100%;
-}
-
-.instructor-image-420{
-  display: none;
-  position: absolute;
 }
 
 
