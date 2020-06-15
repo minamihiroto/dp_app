@@ -444,13 +444,43 @@ footer a{
 .reserve{
   position: absolute;
   margin-top: -270%;
-  margin-left: 48%;
+  margin-left: 36%;
+}
+
+.btn-push {
+  display: inline-block;
+  width: 370px;
+  text-align: center;
+  background-color: #ffa300;
+  font-size: 38px;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 24px;
+  border-radius: 4px;
+  border-bottom: 4px solid #d37800;
+}
+
+.btn-push:active {
+    transform: translateY(4px);
+    border-bottom: none;
+}
+
+.btn-push:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 770px) {
+  .reserve{
+    margin-left: 27%;
+  }
 }
 
 @media screen and (max-width: 420px) {
   .reserve{
-    margin-top: -720%;
-    margin-left: 41%;
+    margin-top: -723%;
+    margin-left: 6%;
   }
 }
 
@@ -831,7 +861,9 @@ font-size: 1.5rem;
 .news-delete{
   text-align: right;
 }
+
 /* news.create */
+
 .news-create{
   text-align: center;
   padding: 5%;
@@ -847,6 +879,10 @@ font-size: 1.5rem;
 
 .form{
   width: 70%;
+}
+
+.news-cansel{
+  margin-right: 10%;
 }
 
 /* post.index */
@@ -1029,4 +1065,15 @@ font-size: 1.5rem;
 
 .home-logout{
   margin: 5% auto;
+}
+
+.home-pay-btn{
+  text-align: center;
+  padding-top: 5%;
+}
+
+.home-pay-title{
+  text-align: center;
+  padding-top: 20%;
+  margin: auto 10%;
 }

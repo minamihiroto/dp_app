@@ -9,9 +9,8 @@
         @if(Auth::user()->admin_flg=='admin')
             <a class="home-news" href="/news/create">お知らせを投稿する</a>
         @else
-        @endif
-    
-        @endif
+        @endif    
+    @endif
 
     <div class="vimeo">
         <iframe src='https://vimeo.com/showcase/7172589/embed' allowfullscreen frameborder='0' style='width:80%;'></iframe>

@@ -26,10 +26,10 @@
         <p class="input-title">メッセージ</p>
         <p><textarea class="form" name="news_message" rows="15">{{ old('news_message') }}</textarea></p>
     </div>
-    <a href="{{ route('post') }}">
+    <a href="{{ route('post') }}" class="news-cansel">
       キャンセル
     </a>
-    <input type="submit" class="create button" value="submit">
+    <input type="submit" class="create button" value="掲載する">
   </form>
 </section>
 @endsection
