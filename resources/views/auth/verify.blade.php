@@ -10,11 +10,11 @@
                 <div class="card-body">
                     @if (session('resent'))
                         <div class="alert alert-success" role="alert">
-                            {{ __('A fresh verification link has been sent to your email address.') }}
+                            メールアドレスにメールを送信しました。
                         </div>
                     @endif
 
-                    {{ __('Before proceeding, please check your email for a verification link.') }}
+                    メールアドレスにメールを送信しました。
                     {{ __('If you did not receive the email') }},
                     <form class="d-inline" method="POST" action="{{ route('verification.resend') }}">
                         @csrf

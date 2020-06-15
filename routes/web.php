@@ -13,9 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
-Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
+
+
+Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
+Route::get('/dashboard', 'HomeController@index')->name('dashboard')->middleware('auth');
 Route::post('/pay','HomeController@pay')->name('pay');
 
 Route::get('/post', 'PostsController@index')->name('post')->middleware('auth');
