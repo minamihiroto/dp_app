@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Gate;
 
 class HomeController extends Controller
 {
@@ -25,12 +26,15 @@ class HomeController extends Controller
     public function index()
     {
         $user = Auth::user();
+      if(Gate::denies('isAdmin')){
         if($user->payjp_subscription==null){
           return view('subscription');
         }
+      }
         $param = ['user'=>$user];
         return view('home',$param);
     }
+
     public function pay(Request $request)
     {
       $token=$request->all()['payjp-token'];
@@ -40,9 +44,8 @@ class HomeController extends Controller
               "description" => $request->user()->email
       ));
       $user =$request->user();
-      $user->payjp_customer=$cu;
 
-      $subscription=\Payjp\Subscription::create(
+      \Payjp\Subscription::create(
               array(
                       "customer" => $cu,
                       "plan" => "pln_1cc76bc7b5618d218ba9903b45b1"
@@ -54,10 +57,8 @@ class HomeController extends Controller
       return view('home',$param);
     }
 
-
     public function contact(Request $request)
     {
-
         return view('home');
     }
 }

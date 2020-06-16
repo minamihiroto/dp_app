@@ -12,8 +12,12 @@ class PostsController extends Controller
     public function index()
     {
         $user = Auth::user();
+        if(Gate::denies('isAdmin')){
+            if($user->payjp_subscription==null){
+              return view('subscription');
+            }
+        }
         $param = ['user'=>$user];
-        // $posts = Post::orderBy('created_at', 'desc')->get();
         $posts = Post::orderBy('created_at', 'desc')->paginate(10);
         return view('posts.index', ['posts' => $posts],$param);
     }
@@ -24,6 +28,9 @@ class PostsController extends Controller
             dd('アクセスが許可されていないユーザです。');
         }else{
             $user = Auth::user();
+            if($user->payjp_subscription==null){
+                return view('subscription');
+            }
             $param = ['user'=>$user];
         } 
         return view('posts.create',$param);
@@ -47,6 +54,12 @@ class PostsController extends Controller
 
     public function show($post_id)
     {
+        $user = Auth::user();
+        if(Gate::denies('isAdmin')){
+            if($user->payjp_subscription==null){
+              return view('subscription');
+            }
+        }
         $post = Post::findOrFail($post_id);
         return view('posts.show', [
             'post' => $post,
