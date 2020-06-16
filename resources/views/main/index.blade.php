@@ -7,10 +7,10 @@
 <img class="top-image-420" src="/images/top-page-420.png">
 
   <section class="billboard">
-    <a href="https://airrsv.net/andocoffee/calendar"><div class="top-button">
+    <a href="https://airrsv.net/andocoffee/calendar" class="top-button">
       <h2>体験予約・スケジュール確認</h2>
       <p>初めての方はコチラから ＞＞</p>
-    </div></a>
+    </a>
   </section>
 
   <section class="news">

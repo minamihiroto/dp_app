@@ -213,19 +213,27 @@ footer a{
 
 .top-button{
   position: fixed;
-  background-color: rgb(188, 86, 247);
-  box-shadow: 2px 2px 4px;
-  border-radius: 10px;
+  display: inline-block;
+  background-color: rgb(173, 47, 247);
+  border-radius: 4px;
   margin-left: 77%;
   margin-top: -700%;
   text-align: center;
   z-index: 40;
   width: 20%;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-bottom: 4px solid #680386;
+}
+
+.top-button:active{
+  transform: translateY(4px);
+  border-bottom: none;
 }
 
 .top-button:hover{
-  background-color: rgb(173, 53, 243);
-  box-shadow: 0px 0px 0px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 .top-button a:hover{
@@ -255,6 +263,7 @@ footer a{
     margin-left: 10%;
     width: 80%;
     padding: 5% 0;
+    border-bottom: 6px solid #680386;
   }
 
 .top-button h2{
@@ -451,15 +460,16 @@ footer a{
   display: inline-block;
   width: 370px;
   text-align: center;
-  background-color: #ffa300;
+  background-color:  rgb(173, 47, 247);
   font-size: 38px;
   color: #FFF;
   text-decoration: none;
   font-weight: bold;
   padding: 10px 24px;
   border-radius: 4px;
-  border-bottom: 4px solid #d37800;
+  border-bottom: 4px solid #680386;
 }
+
 
 .btn-push:active {
     transform: translateY(4px);
@@ -683,11 +693,16 @@ iframe{
 .online-text{
   position: absolute;
   margin-top: -13%;
-  margin-left: 38%;
+  margin-left: 36%;
 }
 
 .online-link{
   font-size: 3vw;
+  color: #9b03c9;
+}
+
+.online-link:hover{
+  color: #680386;
 }
 
 @media screen and (max-width: 420px) {
