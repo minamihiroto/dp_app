@@ -81,8 +81,8 @@
     </p>
   </div>
   <div class="footer-logo">
-    <p><a href="#"><img class="facebook" src="/images/facebook_logo.png"></a></p>
-    <p><a href="#"><img class="instagram" src="/images/instagram_logo.png"></a></p>
+    <p><a href="https://www.facebook.com/dearpilates0100/"><img class="facebook" src="/images/facebook_logo.png"></a></p>
+    <p><a href="https://www.instagram.com/dearpilates/?hl=ja"><img class="instagram" src="/images/instagram_logo.png"></a></p>
   </div>
 </footer>
 

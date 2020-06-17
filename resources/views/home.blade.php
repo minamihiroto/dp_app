@@ -13,7 +13,7 @@
     @endif
 
     <div class="vimeo">
-        <iframe src='https://vimeo.com/showcase/7172589/embed' allowfullscreen frameborder='0' style='width:80%;'></iframe>
+        <iframe src='https://vimeo.com/showcase/7254208/embed' allowfullscreen frameborder='0' style='width:80%;'></iframe>
     </div>
 
     <form class="home-logout" method="POST" action="/logout" class="logout" >

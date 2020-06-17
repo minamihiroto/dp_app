@@ -7,7 +7,7 @@
 <img class="top-image-420" src="/images/top-page-420.png">
 
   <section class="billboard">
-    <a href="https://airrsv.net/andocoffee/calendar" class="top-button">
+    <a href="https://airrsv.net/dearpilates/calendar" class="top-button">
       <h2>体験予約・スケジュール確認</h2>
       <p>初めての方はコチラから ＞＞</p>
     </a>
@@ -47,7 +47,7 @@
   </section>
 
   <section class="reserve" id="reserve">
-    <a href="https://airrsv.net/andocoffee/calendar" class="btn-push">さっそく予約する</a>  
+    <a href="https://airrsv.net/dearpilates/calendar" class="btn-push">さっそく予約する</a>  
   </section>
 
   <section class="contact" id="contact">
