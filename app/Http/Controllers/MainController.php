@@ -52,4 +52,16 @@ class MainController extends Controller
         $param = ['user'=>$user];
         return view('main.online',$param);
     }
+
+    public function agreement(){
+        $user = Auth::user();
+        $param = ['user'=>$user];
+        return view('caution.agreement',$param);
+    }
+
+    public function privacy(){
+        $user = Auth::user();
+        $param = ['user'=>$user];
+        return view('caution.privacy',$param);
+    }
 }

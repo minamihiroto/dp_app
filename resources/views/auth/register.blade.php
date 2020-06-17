@@ -52,6 +52,8 @@
                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
             </div>
 
+            <p><a href="/caution/agreement">利用規約</a>と<a href="/caution/privacy">プライバシーポリシー</a>を必ずご確認の上登録ください</p>
+
             <button type="submit" class="btn">
                 {{ __('新規登録') }}
             </button>

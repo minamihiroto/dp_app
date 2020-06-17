@@ -130,7 +130,7 @@ footer a{
 
 .footer-access{
   margin-left: 8%;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .footer-access h4{
@@ -1091,4 +1091,19 @@ font-size: 1.5rem;
   text-align: center;
   padding-top: 20%;
   margin: auto 10%;
+}
+
+.agreement,.privacy{
+  min-width: 420;
+  padding-top: 15%;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  background-color: #fbefff;
+}
+
+@media(max-width:420px){
+  .agreement,.privacy{
+    padding-top: 30%;
+  }
 }

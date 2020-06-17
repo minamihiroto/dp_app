@@ -33,3 +33,6 @@ Route::post('/contact','MainController@contact')->name('contact');
 Route::get('instructor','MainController@instructor')->name('instructor');
 Route::get('lesson','MainController@lesson')->name('lesson');
 Route::get('online','MainController@online')->name('online');
+
+Route::get('/caution/agreement','MainController@agreement')->name('agreement');
+Route::get('/caution/privacy','MainController@privacy')->name('privacy');

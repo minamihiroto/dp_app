@@ -41,10 +41,10 @@
               オンラインレッスン
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="login">ログイン</a>
-              <a class="dropdown-item" href="register">新規登録</a>
+              <a class="dropdown-item" href="/login">ログイン</a>
+              <a class="dropdown-item" href="/register">新規登録</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="online">オンラインとは</a>
+              <a class="dropdown-item" href="/online">オンラインとは</a>
             </div>
           </li>
         @endif
@@ -79,6 +79,8 @@
       Tel<br>
       080-3845-0100
     </p>
+    <p><a href="/caution/agreement">利用規約</a></p>
+    <p><a href="/caution/privacy">プライバシーポリシー</a></p>
   </div>
   <div class="footer-logo">
     <p><a href="https://www.facebook.com/dearpilates0100/"><img class="facebook" src="/images/facebook_logo.png"></a></p>
