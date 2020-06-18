@@ -1,12 +1,16 @@
 @extends('layouts.member')
 
 @section('content')
+<section class="home-pay">
 <div class="home-pay-title">
   <h1>仮会員登録ありがとうございます。</h1>
-  <p>決済登録をしていただくことで会員登録が完了します</p>
+  <h2>決済登録をしていただくことで会員登録が完了します</h2>
+  <br>
+  <p>ご購入を確定することで、お使いのクレジットカードへのdearpilatesからの請求を承認し、オンラインレッスンの利用規約とプライバシーポリシーに同意したものとみなされます。メンバーシップは自動的に更新されます。</p>
 </div>
 <form action="/pay" method="post" class="home-pay-btn">
   @csrf
   <script src="https://checkout.pay.jp/" class="payjp-button" data-key="pk_test_7282c17c52238bc44fdcbfd2"></script>
 </form>
+</section>
 @endsection

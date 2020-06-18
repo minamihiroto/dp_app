@@ -563,14 +563,6 @@ footer a{
   width: 50%;
 }
 
-@media screen and (max-width: 420px) {
-  .access{
-    position: static;
-    margin: 0%;
-    width: 100%;
-  }
-}
-
 iframe{
   height: 700px;
 }
@@ -598,9 +590,14 @@ iframe{
 }
 
 @media screen and (max-width: 420px) {
+  .access{
+    position: static;
+    margin: 0%;
+    width: 100%;
+  }
 
   iframe{
-    height: 1000px;
+    height: 600px;
   }
 }
 
@@ -644,7 +641,7 @@ iframe{
   }
 
   .parking{
-    margin-top: 700%;
+    margin-top: 600%;
   }
   
 
@@ -1091,6 +1088,7 @@ font-size: 1.5rem;
   text-align: center;
   padding-top: 20%;
   margin: auto 10%;
+  font-size: 1vw;
 }
 
 .agreement,.privacy{
