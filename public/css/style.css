@@ -487,6 +487,18 @@ footer a{
   }
 }
 
+@media screen and (max-width: 550px) {
+
+  .btn-push {
+    font-size: 24px;
+    width: 300px;
+  }
+
+  .reserve{
+    margin-left: 15%;
+  }
+}
+
 @media screen and (max-width: 420px) {
   .reserve{
     margin-top: -723%;
@@ -499,7 +511,7 @@ footer a{
 .contact-text{
   position: absolute;
   margin-top: -225%;
-  margin-left: 36%;
+  margin-left: 35%;
 }
 
 .contact-text p{
@@ -535,6 +547,26 @@ footer a{
   }
 }
 
+@media screen and (max-width: 650px) {
+  .contact-text{
+    margin-top: -225%;
+    margin-left: 37%;
+  }
+
+  .contact-text p{
+    margin-bottom: 10%;
+    font-size: 50%;
+  }
+
+  .contact-text-content{
+    width: 150%;
+  }
+
+  .contact-button{
+    margin-left: 60%;
+  }
+}
+
 @media screen and (max-width: 420px) {
   .contact-text{
     margin-top: -620%;
@@ -567,6 +599,12 @@ iframe{
   height: 700px;
 }
 
+@media screen and (max-width: 1000px) {
+  iframe{
+    height: 600px;
+  }
+}
+
 @media screen and (max-width: 900px) {
   
   .access{
@@ -586,6 +624,12 @@ iframe{
 
   iframe{
     height: 300px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  iframe{
+    height: 200px;
   }
 }
 
