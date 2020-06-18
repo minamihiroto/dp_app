@@ -38,7 +38,7 @@ class HomeController extends Controller
     public function pay(Request $request)
     {
       $token=$request->all()['payjp-token'];
-      \Payjp\Payjp::setApiKey("sk_test_94616d42151d53e689f66764");
+      \Payjp\Payjp::setApiKey("sk_test_222ead2fa625776334712971");
       $cu=\Payjp\Customer::create(array(
               "card" =>$token,
               "description" => $request->user()->email
@@ -48,7 +48,7 @@ class HomeController extends Controller
       \Payjp\Subscription::create(
               array(
                       "customer" => $cu,
-                      "plan" => "pln_1cc76bc7b5618d218ba9903b45b1"
+                      "plan" => "pln_87e0b8a8f25c77c0c0f3a576452d"
               )
       );
       $user->payjp_subscription="PAY";

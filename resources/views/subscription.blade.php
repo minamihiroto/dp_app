@@ -10,7 +10,7 @@
 </div>
 <form action="/pay" method="post" class="home-pay-btn">
   @csrf
-  <script src="https://checkout.pay.jp/" class="payjp-button" data-key="pk_test_7282c17c52238bc44fdcbfd2"></script>
+  <script src="https://checkout.pay.jp/" class="payjp-button" data-key="pk_test_94879a5f0a42f25cc44a5c52"></script>
 </form>
 </section>
 @endsection
