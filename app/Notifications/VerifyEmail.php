@@ -44,11 +44,11 @@ class VerifyEmail extends Notification
         }
 
         return (new MailMessage)
-            ->greeting('こんにちは！')
+            ->greeting('DEARPILATESです。')
             ->subject('メール認証をお願いします')
-            ->line('ボタンを押して認証してね')
+            ->line('ボタンを押して認証してください')
             ->action('メールを認証する', $verificationUrl)
-            ->line('身に覚えがない場合は何もしないでくださいね。怪しいので。');
+            ->line('身に覚えがない場合は何もしないでください。');
     }
 
     /**

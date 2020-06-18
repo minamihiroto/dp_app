@@ -73,12 +73,12 @@ class ResetPassword extends Notification
         }
 
         return (new MailMessage)
-            ->greeting('こんにちは！')
+            ->greeting('DEARPILATESです。')
             ->subject('パスワードリセット用メールです')
-            ->line('これはパスワードリセットの依頼があったのでおくっっています。')
+            ->line('パスワードリセットの依頼があったので送信しました。')
             ->action('パスワードリセット', url(config('app.url').route('password.reset', ['token' => $this->token, 'email' => $notifiable->getEmailForPasswordReset()], false)))
-            ->line('このリンクの有効期限は :count 分です。', ['count' => config('auth.passwords.'.config('auth.defaults.passwords').'.expire')])
-            ->line('身に覚えがない場合は何もしないでくださいね。怪しいので。');
+            ->line('このリンクの有効期限は60分です。', ['count' => config('auth.passwords.'.config('auth.defaults.passwords').'.expire')])
+            ->line('身に覚えがない場合は何もしないでください。');
     }
 
     /**
