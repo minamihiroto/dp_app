@@ -18,7 +18,7 @@
 
     <form class="home-logout" method="POST" action="/logout" class="logout" >
         @csrf
-        <a href="javascript:void(0)" onclick="this.parentNode.submit()">logout</a>
+        <a href="javascript:void(0)" onclick="this.parentNode.submit()">ログアウト</a>
     </form>
 </section>
 @endsection
