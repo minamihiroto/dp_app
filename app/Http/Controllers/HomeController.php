@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Gate;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -60,5 +61,12 @@ class HomeController extends Controller
     public function contact(Request $request)
     {
         return view('home');
+    }
+
+    public function delete($id)
+    {
+        User::find($id)->delete(); // softDelete
+ 
+        return redirect('/register')->with('message', '会員登録を停止しました。');
     }
 }

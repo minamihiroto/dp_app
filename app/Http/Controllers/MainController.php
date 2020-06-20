@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\News;
 use Mail;
-use App\User;
 
 class MainController extends Controller
 {
