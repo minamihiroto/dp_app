@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\News;
 use Mail;
+use App\User;
 
 class MainController extends Controller
 {
@@ -15,7 +16,7 @@ class MainController extends Controller
         $items = News::orderBy('created_at','desc')->paginate(5);
         return view('main.index',['items'=>$items],$param);
     }
-    
+
     public function contact(Request $request){
         if ($request->isMethod('POST')){
             $params = $request->validate([
@@ -64,4 +65,5 @@ class MainController extends Controller
         $param = ['user'=>$user];
         return view('caution.privacy',$param);
     }
+
 }
