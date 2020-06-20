@@ -5,10 +5,6 @@
 @section('content')
 
 <a href="/">トップページに戻る</a>
-    @if(Session::has('message'))
-        <h1 class="content-flash" style="color: red">{{ session('message') }}</h1>
-    @endif
-
 
     <div class="card-header">{{ __('新規登録') }}</div>
 

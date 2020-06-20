@@ -73,9 +73,6 @@
       @if($errors->has('detail'))
         <div class="error_msg error_contact" style="color: red">{{ $errors->first('detail') }}</div>
       @endif
-      @if(Session::has('message'))
-        <p class="content-flash">{{ session('message') }}</p>
-      @endif
 
     </form>
   </section>

@@ -91,6 +91,17 @@ p{
   visibility: hidden;
 }
 
+.content-flash{
+  text-align: center;
+  background-color: #9b03c9;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  width: 100%;
+  margin-top: 70px;
+  z-index: 50;
+  font-size: 180%;
+}
+
 footer{
   display: flex;
   z-index: 100;
@@ -147,6 +158,13 @@ footer a{
 
 .footer-logo p{
   margin-top: 25%;
+}
+
+@media screen and (max-width: 991px) {
+  .content-flash{
+    margin-top: 62.5px;
+    font-size: 150%;
+  }
 }
 
 @media screen and (max-width: 770px) {
@@ -508,7 +526,7 @@ footer a{
 
 /* contact */
 
-.contact-text{
+.contact{
   position: absolute;
   margin-top: -225%;
   margin-left: 35%;
@@ -528,7 +546,7 @@ footer a{
 }
 
 @media screen and (max-width: 770px) {
-  .contact-text{
+  .contact{
     margin-top: -225%;
     margin-left: 25%;
   }
@@ -548,7 +566,7 @@ footer a{
 }
 
 @media screen and (max-width: 650px) {
-  .contact-text{
+  .contact{
     margin-top: -225%;
     margin-left: 37%;
   }
@@ -568,7 +586,7 @@ footer a{
 }
 
 @media screen and (max-width: 420px) {
-  .contact-text{
+  .contact{
     margin-top: -620%;
     margin-left: 15%;
   }

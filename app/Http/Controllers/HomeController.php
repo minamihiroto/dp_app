@@ -67,6 +67,6 @@ class HomeController extends Controller
     {
         User::find($id)->delete(); // softDelete
  
-        return redirect('/register')->with('message', '会員登録を停止しました。');
+        return redirect('/')->with('message', '会員登録を停止しました。');
     }
 }

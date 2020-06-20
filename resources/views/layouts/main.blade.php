@@ -52,6 +52,9 @@
       </ul>
     </div>
   </nav>
+  @if(Session::has('message'))
+  <p class="content-flash">{{ session('message') }}</p>
+  @endif
 
 @endsection
 
