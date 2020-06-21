@@ -19,7 +19,10 @@
     <form class="home-logout" method="POST" action="/logout" class="logout" >
         @csrf
         <a href="javascript:void(0)" onclick="this.parentNode.submit()">ログアウト</a>
-        <a href="/delete/{{$user->id}}">アカウント削除</a>
+    </form>
+    <form name="delete_user" method="POST" action="/delete/{{$user->id}}">
+        @csrf
+        <a href="javascript:void(0)" onclick="this.parentNode.submit()">アカウント削除</a>
     </form>
 </section>
 @endsection
