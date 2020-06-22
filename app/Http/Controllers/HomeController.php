@@ -46,13 +46,14 @@ class HomeController extends Controller
       ));
       $user =$request->user();
 
-      \Payjp\Subscription::create(
+      $subscription=\Payjp\Subscription::create(
               array(
                       "customer" => $cu,
                       "plan" => "pln_87e0b8a8f25c77c0c0f3a576452d"
               )
       );
-      $user->payjp_subscription="PAY";
+
+      $user->payjp_subscription=$subscription->id;
       $user->save();
       $param = ['user'=>$user];
       return view('home',$param);
@@ -65,8 +66,11 @@ class HomeController extends Controller
 
     public function delete($id)
     {
-        User::find($id)->delete(); // softDelete
- 
+        $user=User::find($id);
+        \Payjp\Payjp::setApiKey("sk_test_222ead2fa625776334712971");
+        $su = \Payjp\Subscription::retrieve($user->payjp_subscription);
+        $su->pause();
+        $user->delete();
         return redirect('/')->with('message', '会員登録を停止しました。');
     }
 }
