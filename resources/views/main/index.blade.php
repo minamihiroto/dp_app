@@ -47,7 +47,7 @@
   </section>
 
   <section class="reserve" id="reserve">
-    <a href="https://airrsv.net/dearpilates/calendar" class="btn-push">さっそく予約する</a>  
+    <a href="https://airrsv.net/dearpilates/calendar" class="btn-push">予約スケジュールを見る</a>  
   </section>
 
   <section class="contact" id="contact">

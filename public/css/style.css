@@ -471,12 +471,12 @@ footer a{
 .reserve{
   position: absolute;
   margin-top: -270%;
-  margin-left: 36%;
+  margin-left: 34%;
 }
 
 .btn-push {
   display: inline-block;
-  width: 370px;
+  width: 470px;
   text-align: center;
   background-color:  rgb(173, 47, 247);
   font-size: 38px;
@@ -501,7 +501,7 @@ footer a{
 
 @media screen and (max-width: 770px) {
   .reserve{
-    margin-left: 27%;
+    margin-left: 20%;
   }
 }
 
@@ -509,18 +509,18 @@ footer a{
 
   .btn-push {
     font-size: 24px;
-    width: 300px;
+    width: 350px;
   }
 
   .reserve{
-    margin-left: 15%;
+    margin-left: 19%;
   }
 }
 
 @media screen and (max-width: 420px) {
   .reserve{
     margin-top: -723%;
-    margin-left: 6%;
+    margin-left: 9%;
   }
 }
 
@@ -588,7 +588,7 @@ footer a{
 @media screen and (max-width: 420px) {
   .contact{
     margin-top: -620%;
-    margin-left: 15%;
+    margin-left: 30%;
   }
 
   .contact-text p{
