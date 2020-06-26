@@ -1,5 +1,4 @@
 @extends('layouts.main')
-@section('title','Top')
 @section('body_class','top-body')
 @section('content')
 

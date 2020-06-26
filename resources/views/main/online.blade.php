@@ -1,5 +1,4 @@
 @extends('layouts.main')
-@section('title','online')
 @section('content')
   <section class="online">
     <img class="online-image" src="/images/online-page.png">

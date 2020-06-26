@@ -1,5 +1,4 @@
 @extends('layouts.main')
-@section('title','lesson')
 @section('content')
 <img class="lesson-image" src="/images/lesson-page.png">
 <img class="lesson-image-420" src="/images/lesson-page-420.png">
