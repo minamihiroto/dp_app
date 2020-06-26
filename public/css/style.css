@@ -1153,6 +1153,14 @@ font-size: 1.5rem;
   font-size: 1vw;
 }
 
+.home-delete{
+  margin: 250px 2% 2%;
+  text-align: right;
+}
+.home-delete a{
+  color: rgb(165, 165, 165);
+}
+
 .agreement,.privacy{
   min-width: 420;
   padding-top: 15%;
