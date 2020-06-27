@@ -17,7 +17,7 @@
       <ul>
       @if(count($items) > 0)
         @foreach($items as $item)
-            <li><div class="news-link-type">{{$item->news_type}}</div><a class="news-link" href="/news/{{$item->id}}"><span class="news-date">{{$item->created_at->format('m/d：')}}</span>{{ $item->news_title }}</a></li>
+            <li><a class="news-link" href="/news/{{$item->id}}"><span class="news-date">{{$item->created_at->format('m/d：')}}</span>{{ $item->news_title }}</a></li>
         @endforeach
             <li class="news-before"><a class="news-before-link news-link" href="/news">以前のお知らせを見る ＞＞</a></li>
       @else
