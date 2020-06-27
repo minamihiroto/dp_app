@@ -28,21 +28,15 @@
   </section>
 
   <section class="instructor-about">
-    <div class="instructor-link">
-      <a href="/instructor">インストラクターについて詳しく知りたい ＞＞</a>
-    </div>
+      <a class="btn" href="/instructor">インストラクターについて詳しく知りたい ＞＞</a>
   </section>
 
   <section class="lesson-about">
-    <div class="lesson-link">
-      <a href="lesson">その他レッスンについてもっと詳しく知りたい ＞＞</a>
-    </div>
+      <a class="btn" href="lesson">その他レッスンについてもっと詳しく知りたい ＞＞</a>
   </section>
 
   <section class="online-about">
-    <div class="onlinelesson-link">
-      <a href="online">オンラインレッスについて詳しく知りたい ＞＞</a>
-    </div>
+      <a class="btn" href="online">オンラインレッスについて詳しく知りたい ＞＞</a>
   </section>
 
   <section class="reserve" id="reserve">

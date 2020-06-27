@@ -367,102 +367,69 @@ footer a{
   position: absolute;
   margin-top: -500%;
   margin-left: 50%;
-  width: 26%;
-}
-
-.instructor-link{
-  background-color: white;
-  padding: 4% 5%;
-  text-align: center;
-  border-radius: 5px;
-} 
-
-.instructor-link a{
-  font-size: 1vw;
 }
 
 .lesson-about{
   position: absolute;
   margin-top: -410%;
   margin-left: 50%;  
-  width: 35%;
-}
-
-.lesson-link{
-  background-color: white;
-  padding: 4% 4%;
-  text-align: center;
-  border-radius: 5px;
-}
-
-.lesson-link a{
-  font-size: 1vw;
 }
 
 .online-about{
   position: absolute;
   margin-top: -295%;
   margin-left: 50%;  
-  width: 35%;
 }
 
-.onlinelesson-link{
-  background-color: white;
-  padding: 4% 4%;
+.btn {
+  display: inline-block;
   text-align: center;
-  border-radius: 5px;
+  background-color:  rgb(173, 47, 247);
+  font-size: 1vw;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 24px;
+  border-radius: 4px;
+  border-bottom: 4px solid #680386;
 }
 
-.onlinelesson-link a{
-  font-size: 1vw;
+
+.btn:active {
+    transform: translateY(4px);
+    border-bottom: none;
+}
+
+.btn:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 @media screen and (max-width: 770px) {
-  .instructor-about{
-    width: 35%;
-  }
 
-  .instructor-link{
-    padding: 2.5% 2%;
-    font-size: 0.7vw;
-  }    
-  
-  .lesson-about{
-    width: 45%;
-  }
-  
-  .lesson-link{
-    font-size: 0.6vw;
-    padding: 2.5% 2.5%;
-  }
-  
-  .online-about{
-  width: 35%;
-  }
-  
-  .onlinelesson-link{
-    padding: 2.5% 2%;
-    font-size: 0.7vw;
-  }
 }
 
 @media screen and (max-width: 420px) {
   .instructor-about{
     margin: 0%;
     margin-top: -1502%;
-    width: 100%;
+    margin-left: 17.5%;
   }
 
   .lesson-about{
     margin: 0%;
     margin-top: -1020%;
-    width: 100%;
+    margin-left: 15%;
   }
 
   .online-about{
     margin: 0%;
     margin-top: -765%;
-    width: 100%;
+    margin-left: 18%;
+  }
+
+  .instructor-link a,.lesson-link a,.onlinelesson-link a{
+    font-size: 15px;
   }
 }
 
@@ -518,11 +485,18 @@ footer a{
 }
 
 @media screen and (max-width: 420px) {
+
+  .btn-push {
+    font-size: 24px;
+    width: 300px;
+  }
+
   .reserve{
     margin-top: -723%;
-    margin-left: 9%;
+    margin-left: 12%;
   }
 }
+
 
 /* contact */
 
