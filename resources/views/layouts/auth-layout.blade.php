@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="/css/@yield('css')" rel="stylesheet">
+    <link rel="shortcut icon" href="{{asset('/images/favicon.ico')}}">
 </head>
 <body>
     <div id="app">
