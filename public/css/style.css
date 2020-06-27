@@ -1156,7 +1156,20 @@ font-size: 1.5rem;
   background-color: #fbefff;
 }
 
+.vimeo-iframe{
+  width: 80%;
+}
+
 @media(max-width:420px){
+  .home h2{
+    font-size: 14px;
+    margin: 0 15% 0;
+  }
+
+  .vimeo-iframe{
+    width: 70%;
+  }
+
   .agreement,.privacy{
     padding-top: 30%;
   }
