@@ -3,6 +3,7 @@
 @section('content')
 <section class="news-create">
   <a href="/post" class="back-link">Q&Aにいく</a>
+  <p>※タイトルは50文字以内、本文は5000文字以内でお願いします。</p>
   <form action="{{ route('news.store') }}" method="post" enctype="multipart/form-data">
     @csrf
     <div class="contact-main">
