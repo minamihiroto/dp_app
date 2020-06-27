@@ -414,8 +414,8 @@ footer a{
 @media screen and (max-width: 420px) {
   .instructor-about{
     margin: 0%;
-    margin-top: -1502%;
-    margin-left: 17.5%;
+    margin-top: -1511.5%;
+    margin-left: 17%;
   }
 
   .lesson-about{
@@ -564,7 +564,7 @@ footer a{
 @media screen and (max-width: 420px) {
   .contact{
     margin-top: -620%;
-    margin-left: 30%;
+    margin-left: 20%;
   }
 
   .contact-text p{
@@ -654,7 +654,7 @@ iframe{
 }
 
 .caution a{
-  font-size: 1.2vw;
+  font-size: 18px;
   color: rgb(85, 68, 240);
 }
 
@@ -663,13 +663,19 @@ iframe{
 }
 
 .caution a:hover{
-  font-size: 1.2vw;
   color: rgb(137, 126, 236);
+}
+
+@media screen and (max-width: 770px) {
+  .caution a{
+    font-size: 10px;
+    color: rgb(85, 68, 240);
+  }
 }
 
 @media screen and (max-width: 420px) {
   .caution{
-    margin-top: -248%;
+    margin-top: -255%;
     margin-left: 30%;
   }
 
