@@ -20,7 +20,7 @@
         @csrf
         <a href="javascript:void(0)" onclick="this.parentNode.submit()">ログアウト</a>
     </form>
-    @if(Auth::user()!=null)
+    {{-- @if(Auth::user()!=null)
         @if(Auth::user()->admin_flg=='admin')
         @else
         <form class="home-delete" name="delete_user" method="POST" action="/delete/{{$user->id}}">
@@ -28,7 +28,8 @@
             <a href="javascript:void(0)" onclick="this.parentNode.submit()">退会する</a>
         </form>
         @endif    
-    @endif
+    @endif --}}
+    <div><a href="/cansel">規約等の確認</a></div>
 
 </section>
 @endsection

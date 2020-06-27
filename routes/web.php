@@ -20,6 +20,7 @@ Auth::routes(['verify' => true]);
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
 Route::get('/dashboard', 'HomeController@index')->name('dashboard')->middleware('auth');
 Route::post('/pay','HomeController@pay')->name('pay');
+Route::get('/cansel', 'HomeController@cansel')->name('cansel');
 Route::post('/delete/{id}', 'HomeController@delete');
 
 Route::get('/post', 'PostsController@index')->name('post')->middleware('auth');

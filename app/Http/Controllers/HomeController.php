@@ -64,6 +64,17 @@ class HomeController extends Controller
         return view('home');
     }
 
+    public function cansel(){
+      $user = Auth::user();
+      if(Gate::denies('isAdmin')){
+        if($user->payjp_subscription==null){
+          return view('subscription');
+        }
+      }
+        $param = ['user'=>$user];
+        return view('cansel',$param);
+    }
+
     public function delete($id)
     {
         $user=User::find($id);
