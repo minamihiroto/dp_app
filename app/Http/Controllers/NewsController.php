@@ -36,7 +36,7 @@ class NewsController extends Controller
         $params = $request->validate([
             'news_type' => 'required',
             'news_title' => 'required|max:50',
-            'news_message' => 'required|max:2000',
+            'news_message' => 'required|max:5000',
         ]);
 
         $params = new News;

@@ -21,7 +21,7 @@ class MainController extends Controller
             $params = $request->validate([
                 'name' => 'required',
                 'email' => 'required|email',
-                'detail' => 'required',
+                'detail' => 'required|max:1000',
             ]);
 
             $name=$request->name;
