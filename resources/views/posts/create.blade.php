@@ -8,6 +8,7 @@
             <form method="POST" action="{{ route('posts.store') }}">
                 @csrf
                     <h1>質問を投稿する</h1>
+                    <p>※タイトルは30文字以内、本文は1500文字以内でお願いします。</p>
 
                     <div class="post-title">
                         <input name="title" placeholder="タイトル" type="text" class="{{ $errors->has('title') ? 'is-invalid' : '' }}">
