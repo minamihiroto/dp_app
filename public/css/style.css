@@ -524,7 +524,7 @@ footer a{
 @media screen and (max-width: 770px) {
   .contact{
     margin-top: -225%;
-    margin-left: 17%;
+    margin-left: 12%;
   }
 
   .contact-text p{
@@ -544,7 +544,7 @@ footer a{
 @media screen and (max-width: 650px) {
   .contact{
     margin-top: -225%;
-    margin-left: 35%;
+    margin-left: 32%;
   }
 
   .contact-text p{
@@ -564,7 +564,7 @@ footer a{
 @media screen and (max-width: 420px) {
   .contact{
     margin-top: -620%;
-    margin-left: 28%;
+    margin-left: 27%;
   }
 
   .contact-text p{
@@ -577,7 +577,7 @@ footer a{
   }
 
   .contact-button{
-    margin-left: 63%;
+    margin-left: 44%;
   }
 }
 
