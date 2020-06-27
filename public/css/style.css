@@ -738,7 +738,7 @@ iframe{
 }
 
 .online-link{
-  font-size: 3vw;
+  font-size: 24px;
   color: #9b03c9;
 }
 
@@ -761,6 +761,10 @@ iframe{
   .online-text{
     position: absolute;
     margin-left: 38%;
+  }
+  .online-link{
+    font-size: 10px;
+    color: #9b03c9;
   }
 }
 
