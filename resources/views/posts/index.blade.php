@@ -37,7 +37,7 @@
 
                 <div class="question-body">
                     <p>
-                        {!! nl2br(e(Str::limit($post->body, 200))) !!}
+                        {!! nl2br(e(Str::limit($post->body, 70))) !!}
                     </p>
                     <a href="{{ route('posts.show', ['post' => $post]) }}" class="question-omi">
                         続きを読む
