@@ -28,7 +28,7 @@ class MainController extends Controller
             $email=$request->email;
             $tel=$request->tel;
             $detail=$request->detail;
-            Mail::raw($name."\n".$email."\n".$tel."\n".$detail, function($message) {
+            Mail::raw("お名前：".$name."\n"."メールアドレス：".$email."\n"."電話番号：".$tel."\n"."内容：".$detail, function($message) {
             $message->to("dearpilates.yukinco@gmail.com")->subject('お問い合わせメール');
         });
         }
