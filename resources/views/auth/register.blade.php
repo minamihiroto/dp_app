@@ -5,8 +5,7 @@
 @section('content')
 
 <a href="/">トップページに戻る</a>
-
-    <div class="card-header">{{ __('新規登録') }}</div>
+    <h4 style="color: rgb(129, 23, 235)">DearPlatesオンラインレッスン登録</h4>
 
     <section class="card-body">
 
