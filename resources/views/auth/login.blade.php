@@ -5,7 +5,7 @@
 @section('content')
 
     <a href="/">トップページに戻る</a>
-    <h4 style="color: rgb(129, 23, 235)">DearPlatesオンラインレッスンログイン</h4>
+    <h4 style="color: rgb(129, 23, 235)">DearPilatesオンラインレッスンログイン</h4>
 
     <section class="card-body">
 

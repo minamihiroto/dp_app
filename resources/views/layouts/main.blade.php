@@ -72,7 +72,7 @@
     <a href="https://goo.gl/maps/Xd5oPkoK2QVmriNTA"><li>近隣駐車場のご案内</li></a>
   </ul>
   <div class="footer-access">
-    <h4>DEARPILATES</h4>
+    <h4>Dear Pilates</h4>
     <p class="addless">Addless<br>
       〒594-0031<br>
       和泉市伏屋町5-14-8<br>
