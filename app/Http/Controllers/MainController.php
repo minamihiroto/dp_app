@@ -29,7 +29,7 @@ class MainController extends Controller
             $tel=$request->tel;
             $detail=$request->detail;
             Mail::raw($name."\n".$email."\n".$tel."\n".$detail, function($message) {
-            $message->to("kokowatamf@gmail.com")->subject('お問い合わせメール');
+            $message->to("dearpilates.yukinco@gmail.com")->subject('お問い合わせメール');
         });
         }
         return redirect('/#contact')->with('message', 'お問い合わせを送信しました');
