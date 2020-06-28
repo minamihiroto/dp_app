@@ -177,6 +177,7 @@
   </section>
   <h1 style="margin-top: 150px">退会したい</h1>
   <p style="color: red;">※退会すると即時にオンラインレッスンに関する全てのサービスのご利用が停止されます。</p>
+  <p style="color: red;">日割計算ではないので退会時残り日数があっても返金は行えません。</p>
 
     @if(Auth::user()!=null)
         @if(Auth::user()->admin_flg=='admin')
