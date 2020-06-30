@@ -36,7 +36,7 @@
   </section>
 
   <section class="online-about">
-      <a class="btn" href="online">オンラインレッスについて詳しく知りたい ＞＞</a>
+      <a class="btn" href="online">オンラインレッスンについて詳しく知りたい ＞＞</a>
   </section>
 
   <section class="reserve" id="reserve">
