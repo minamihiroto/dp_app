@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://dearpilates.com'),
+    'url' => env('APP_URL', 'https://dearpilates.com'),
     'asset_url' => env('ASSET_URL', null),
 
     /*
