@@ -39,7 +39,7 @@ class HomeController extends Controller
     public function pay(Request $request)
     {
       $token=$request->all()['payjp-token'];
-      \Payjp\Payjp::setApiKey("sk_test_222ead2fa625776334712971");
+      \Payjp\Payjp::setApiKey("sk_live_2d5ade1b8b83fee8539f6e557f6a9a66408b23b2587fb7b409a51063");
       $cu=\Payjp\Customer::create(array(
               "card" =>$token,
               "description" => $request->user()->email
@@ -49,7 +49,7 @@ class HomeController extends Controller
       $subscription=\Payjp\Subscription::create(
               array(
                       "customer" => $cu,
-                      "plan" => "pln_87e0b8a8f25c77c0c0f3a576452d"
+                      "plan" => "pln_247629285b91c98386a0c8535c4e"
               )
       );
 
@@ -78,7 +78,7 @@ class HomeController extends Controller
     public function delete($id)
     {
         $user=User::find($id);
-        \Payjp\Payjp::setApiKey("sk_test_222ead2fa625776334712971");
+        \Payjp\Payjp::setApiKey("sk_live_2d5ade1b8b83fee8539f6e557f6a9a66408b23b2587fb7b409a51063");
         $su = \Payjp\Subscription::retrieve($user->payjp_subscription);
         $su->pause();
         $user->delete();
