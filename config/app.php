@@ -52,8 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://www.olivecow8.sakura.ne.jp'),
-
+    'url' => env('APP_URL', 'http://dearpilates.com'),
     'asset_url' => env('ASSET_URL', null),
 
     /*
