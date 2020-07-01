@@ -49,7 +49,7 @@ class HomeController extends Controller
       $subscription=\Payjp\Subscription::create(
               array(
                       "customer" => $cu,
-                      "plan" => "pln_247629285b91c98386a0c8535c4e"
+                      "plan" => "pln_e28fbf5e9a79fa272a7d64331280"
               )
       );
 
