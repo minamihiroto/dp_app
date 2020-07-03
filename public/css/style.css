@@ -1189,3 +1189,28 @@ font-size: 1.5rem;
   text-align: center;
   font-size: 30px;
 }
+
+.online-caution{
+  text-align: left;
+  margin: 0 10% 5%;
+}
+
+.online-caution h5{
+  color: red;
+  margin-bottom: 3%;
+}
+
+@media(max-width:420px){
+  .online-caution{
+    text-align: left;
+    margin: 0 15% 5%;
+  }
+
+  .online-caution h5{
+    font-size: 12px;
+  }
+
+  .online-caution p{
+    font-size: 9px;
+  }
+}
