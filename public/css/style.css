@@ -1198,6 +1198,7 @@ font-size: 1.5rem;
 .online-caution h5{
   color: red;
   margin-bottom: 3%;
+  margin-top: 3%;
 }
 
 @media(max-width:420px){
