@@ -32,6 +32,7 @@ Route::resource('news', 'NewsController',['only'=>['create','store','show','dest
 
 Route::get('/','MainController@index')->name('top');
 Route::post('/contact','MainController@contact')->name('contact');
+
 Route::get('instructor','MainController@instructor')->name('instructor');
 Route::get('lesson','MainController@lesson')->name('lesson');
 Route::get('online','MainController@online')->name('online');

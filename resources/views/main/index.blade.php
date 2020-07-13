@@ -52,21 +52,24 @@
           <p><input class="contact-text-content" type="text" name="email" placeholder="メールアドレス※必須項目"></p>
           <p><input class="contact-text-content" type="text" name="tel" placeholder="電話番号"></p>
           <p><textarea class="contact-text-content" name="detail" cols="20" rows="8" placeholder="お問い合わせ内容※必須項目"></textarea></p>
+          {!! NoCaptcha::renderJs() !!}
+          {!! NoCaptcha::display() !!}
           <div class="contact-button submit-button">
             <input type="submit" value="送信">
           </div>
         </div>
       </div>
-      @if($errors->has('name'))
-        <div class="error_msg error_contact" style="color: red">{{ $errors->first('name') }}</div>
+      @if($errors->any())
+        @foreach ($errors->all() as $error)
+          <li style="color: red">{{ $error }}</li>
+        @endforeach
       @endif
-      @if($errors->has('email'))
+      {{-- @if($errors->has('email'))
         <div class="error_msg error_contact" style="color: red">{{ $errors->first('email') }}</div>
       @endif
       @if($errors->has('detail'))
         <div class="error_msg error_contact" style="color: red">{{ $errors->first('detail') }}</div>
-      @endif
-
+      @endif --}}
     </form>
   </section>
 

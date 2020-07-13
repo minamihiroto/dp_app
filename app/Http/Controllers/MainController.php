@@ -22,6 +22,7 @@ class MainController extends Controller
                 'name' => 'required',
                 'email' => 'required|email',
                 'detail' => 'required|max:1000',
+                'g-recaptcha-response' => 'required|captcha',
             ]);
 
             $name=$request->name;
