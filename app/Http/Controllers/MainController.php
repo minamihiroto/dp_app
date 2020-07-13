@@ -16,25 +16,25 @@ class MainController extends Controller
         return view('main.index',['items'=>$items],$param);
     }
 
-    public function contact(Request $request){
-        if ($request->isMethod('POST')){
-            $params = $request->validate([
-                'name' => 'required',
-                'email' => 'required|email',
-                'detail' => 'required|max:1000',
-                'g-recaptcha-response' => 'required|captcha',
-            ]);
+    // public function contact(Request $request){
+    //     if ($request->isMethod('POST')){
+    //         $params = $request->validate([
+    //             'name' => 'required',
+    //             'email' => 'required|email',
+    //             'detail' => 'required|max:1000',
+    //             'g-recaptcha-response' => 'required|captcha',
+    //         ]);
 
-            $name=$request->name;
-            $email=$request->email;
-            $tel=$request->tel;
-            $detail=$request->detail;
-            Mail::raw("お名前：".$name."\n"."メールアドレス：".$email."\n"."電話番号：".$tel."\n"."内容：".$detail, function($message) {
-            $message->to("dearpilates.yukinco@gmail.com")->subject('お問い合わせメール');
-        });
-        }
-        return redirect('/#contact')->with('message', 'お問い合わせを送信しました');
-    }
+    //         $name=$request->name;
+    //         $email=$request->email;
+    //         $tel=$request->tel;
+    //         $detail=$request->detail;
+    //         Mail::raw("お名前：".$name."\n"."メールアドレス：".$email."\n"."電話番号：".$tel."\n"."内容：".$detail, function($message) {
+    //         $message->to("dearpilates.yukinco@gmail.com")->subject('お問い合わせメール');
+    //     });
+    //     }
+    //     return redirect('/#contact')->with('message', 'お問い合わせを送信しました');
+    // }
 
     public function instructor(){
         $user = Auth::user();
