@@ -52,8 +52,8 @@
           <p><input class="contact-text-content" type="text" name="email" placeholder="メールアドレス※必須項目"></p>
           <p><input class="contact-text-content" type="text" name="tel" placeholder="電話番号"></p>
           <p><textarea class="contact-text-content" name="detail" cols="20" rows="8" placeholder="お問い合わせ内容※必須項目"></textarea></p>
-          {!! NoCaptcha::renderJs() !!}
-          {!! NoCaptcha::display() !!}
+          {{-- {!! NoCaptcha::renderJs() !!}
+          {!! NoCaptcha::display() !!} --}}
           <div class="contact-button submit-button">
             <input type="submit" value="送信">
           </div>
