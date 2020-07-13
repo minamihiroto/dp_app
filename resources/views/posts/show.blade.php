@@ -2,7 +2,7 @@
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 @endsection
-@section('title','Q&A')
+@section('title','オンラインコミュニティ')
 @section('content')
     <section class="show-question">
 

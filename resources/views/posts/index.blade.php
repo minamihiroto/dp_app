@@ -2,19 +2,22 @@
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 @endsection
-@section('title','Q&A')
+@section('title','オンラインコミュニティ')
 @section('content')
 
 <div class="qa-back-img">
     <section class="index-questions">
         <div class="index-questions-headline">
             <a href="/home">＜＜ 動画を観に戻る</a>
-            <h1>Q&A</h1>
+            <h1>オンラインコミュニティ</h1>
             @cannot('isAdmin')
                 <a href="{{ route('posts.create') }}">
-                    質問を投稿する ＞＞
+                    インストラクターに質問を投稿する ＞＞
                 </a>
             @else
+            <a href="{{ route('posts.create') }}" class="post_create">
+                オンライン限定のお知らせを投稿する ＞＞
+            </a>
             <a href="{{ route('news.create') }}">
                 お知らせ投稿をしにいく ＞＞
             </a>

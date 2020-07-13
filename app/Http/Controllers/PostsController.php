@@ -25,7 +25,8 @@ class PostsController extends Controller
     public function create()
     {
         if(Gate::allows('isAdmin')){
-            dd('アクセスが許可されていないユーザです。');
+            $user = Auth::user();
+            $param = ['user'=>$user];
         }else{
             $user = Auth::user();
             if($user->payjp_subscription==null){

@@ -964,7 +964,7 @@ font-size: 1.5rem;
 }
 
 .index-questions-headline h1{
-  font-size: 3rem;
+  font-size: 50px;
   margin-bottom: 1%;
 }
 
@@ -1118,7 +1118,7 @@ font-size: 1.5rem;
 }
 
 .home-news{
-  padding-left: 10%;
+  display: block;
 }
 
 .vimeo{
@@ -1232,5 +1232,29 @@ font-size: 1.5rem;
   .googlecontact{
     height: 720px;
     width: 400px;
+  }
+
+  .index-questions-headline h1{
+    font-size: 20px;
+    margin-bottom: 1%;
+  }
+  
+}
+
+.post_create{
+  display: block;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  color: red;
+}
+
+.post_create:hover{
+  color: rgb(255, 89, 89);
+}
+
+@media(max-width:420px){
+  .post_create{
+    width: 75%;
+    margin: auto;
   }
 }

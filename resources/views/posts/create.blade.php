@@ -2,12 +2,12 @@
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 @endsection
-@section('title','Q&A')
+@section('title','オンラインコミュニティ')
 @section('content')
     <section class="post-question">
             <form method="POST" action="{{ route('posts.store') }}">
                 @csrf
-                    <h1>質問を投稿する</h1>
+                    <h1>投稿する</h1>
                     <p>※タイトルは30文字以内、本文は1500文字以内でお願いします。</p>
 
                     <div class="post-title">

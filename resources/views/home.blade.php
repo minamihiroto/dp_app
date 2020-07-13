@@ -3,11 +3,14 @@
 @section('content')
 <section class="home">
     <h2>ようこそ、{{ $user->name }}さん</h2>
-    <a href="/post">Q&A</a>
+    <a href="/post">オンラインコミュニティ</a>
                 
     @if(Auth::user()!=null)
         @if(Auth::user()->admin_flg=='admin')
             <a class="home-news" href="/news/create">お知らせを投稿する</a>
+            <a href="{{ route('posts.create') }}" class="post_create">
+                オンライン限定のお知らせを投稿する ＞＞
+            </a>
         @else
         @endif    
     @endif
