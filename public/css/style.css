@@ -503,11 +503,11 @@ footer a{
 .contact{
   position: absolute;
   margin-top: -233%;
-  margin-left: 35%;
+  margin-left: 27%;
 }
 
 .contact-text p{
-  margin-bottom: 20%;
+  margin-bottom: 15px;
   size: 2vw;
 }
 
@@ -517,16 +517,17 @@ footer a{
 
 .contact-button{
   margin-left: 95%;
+  margin-top: 5px;
 }
 
 @media screen and (max-width: 770px) {
   .contact{
-    margin-top: -225%;
+    margin-top: -230%;
     margin-left: 12%;
   }
 
   .contact-text p{
-    margin-bottom: 10%;
+    margin-bottom: 10px;
     size: 2vw;
   }
 
@@ -566,16 +567,16 @@ footer a{
   }
 
   .contact-text p{
-    margin-bottom: 10%;
+    margin-bottom: 13px;
     size: 2vw;
   }
 
   .contact-text-content{
-    width: 150%;
+    width: 75%;
   }
 
   .contact-button{
-    margin-left: 44%;
+    margin-left: 30%;
   }
 }
 
