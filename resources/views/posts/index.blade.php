@@ -10,6 +10,7 @@
         <div class="index-questions-headline">
             <a href="/home">＜＜ 動画を観に戻る</a>
             <h1>オンラインコミュニティ</h1>
+            <h6>オンラインコミュニティではインストラクターに質問したり、オンライン会員限定の情報を得る事ができます！</h6>
             @cannot('isAdmin')
                 <a href="{{ route('posts.create') }}">
                     インストラクターに質問を投稿する ＞＞
