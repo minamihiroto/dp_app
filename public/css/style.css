@@ -437,8 +437,8 @@ footer a{
 
 .reserve{
   position: absolute;
-  margin-top: -270%;
-  margin-left: 34%;
+  margin-top: -275%;
+  margin-left: 35.5%;
 }
 
 .btn-push {
@@ -502,8 +502,8 @@ footer a{
 
 .contact{
   position: absolute;
-  margin-top: -233%;
-  margin-left: 27%;
+  margin-top: -260%;
+  margin-left: 30%;
 }
 
 .contact-text p{
@@ -522,8 +522,8 @@ footer a{
 
 @media screen and (max-width: 770px) {
   .contact{
-    margin-top: -230%;
-    margin-left: 12%;
+    margin-top: -250%;
+    margin-left: 18%;
   }
 
   .contact-text p{
@@ -562,8 +562,8 @@ footer a{
 
 @media screen and (max-width: 420px) {
   .contact{
-    margin-top: -620%;
-    margin-left: 24%;
+    margin-top: -680%;
+    margin-left: 2.5%;
   }
 
   .contact-text p{
@@ -1214,5 +1214,23 @@ font-size: 1.5rem;
 
   .online-caution p{
     font-size: 9px;
+  }
+}
+
+.googlecontact{
+  height: 1100px;
+}
+
+@media(max-width:770px){
+  .googlecontact{
+    height: 650px;
+    width: 500px;
+  }
+}
+
+@media(max-width:420px){
+  .googlecontact{
+    height: 720px;
+    width: 400px;
   }
 }
