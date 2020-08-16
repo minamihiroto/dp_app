@@ -32,7 +32,7 @@
   </section>
 
   <section class="lesson-about">
-      <a class="btn" href="lesson">その他レッスンについてもっと詳しく知りたい ＞＞</a>
+      <a class="btn" href="lesson">レッスンや他のクラスについて詳しく知りたい ＞＞</a>
   </section>
 
   <section class="online-about">

@@ -17,7 +17,7 @@
       <ul class="navbar-nav mr-auto">
 
         <li class="nav-item">
-          <a class="nav-link" href="/lesson">レッスンメニュー・料金体系</a>
+          <a class="nav-link" href="/lesson">レッスン料金体系・他のクラス</a>
         </li>
 
         <li class="nav-item">
@@ -67,7 +67,7 @@
   <ul class="footer-link">
     <a href="/news"><li>以前のお知らせを見る</li></a>
     <a href="/instructor"><li>インストラクターについて詳しく知りたい</li></a>
-    <a href="/lesson"><li>その他レッスンについてもっと詳しく知りたい</li></a>
+    <a href="/lesson"><li>レッスンや他のクラスについて詳しく知りたい</li></a>
     <a href="/online"><li>オンラインレッスンについて詳しく知りたい</li></a>
     <a href="https://goo.gl/maps/Xd5oPkoK2QVmriNTA"><li>近隣駐車場のご案内</li></a>
   </ul>
